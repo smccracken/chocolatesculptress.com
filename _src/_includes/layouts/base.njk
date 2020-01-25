@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="fonts">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta property="og:site_name" content="{{ metadata.title }}">
+		<link rel="canonical" href="{{ metadata.url }}">
+
+		<title>{{ metadata.title }}</title>
+		<meta name="description" content="{{ metadata.description }}">
+
+		<meta name="application-name" content="{{ metadata.title }}">
+		<link rel="manifest" href="/webappmanifest.json">
+		
+		<meta name="msapplication-TileImage" content="/_assets/img/icon-144.png">
+		<meta name="theme-color" content="#6d252e">
+		<link rel="icon" type="image/png" href="/_assets/img/icon-32.png" sizes="32x32">
+
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"url": "{{ metadata.url }}",
+				"title": "{{ metadata.title }}",
+				"author_name": "{{ metadata.author.name }}",
+				"logo": "{{ metadata.url }}/_assets/img/profile.gif",
+				"sameAs" : [
+					"https://twitter.com/scottmccracken"
+				] 
+			}
+		</script>
+
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@scottmccracken">
+		<meta name="twitter:creator" content="@scottmccracken">
+		<meta property="og:site_name" content="{{ metadata.name }}">
+		<meta name="twitter:title" content="{{ metadata.title }}">
+		<meta property="og:title" content="{{ metadata.title }}">
+		<meta property="og:url" content="{{ metadata.url }}">
+		<meta name="twitter:description" content="{{ lede }}">
+		<meta property="og:description" content="{{ lede }}">
+		<meta name="twitter:image" content="{{ metadata.url }}/_assets/img/profile.gif">
+		<meta name="twitter:image:alt" content="{{ metadata.description }}">
+		<meta property="og:image" content="{{ metadata.url }}/_assets/img/profile.gif">
+		<meta property="og:image:alt" content="{{ metadata.description }}">
+
+		<meta name="author" content="{{ metadata.author.name }}">
+
+		<link rel="stylesheet" type="text/css" href="/_assets/css/screen.css">
+	</head>
+	<body>
+		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+			<a class="a11y-only" href="#what" title="Skip to main content">Skip to main content</a>
+			{% block content %}{% endblock %}
+		</main>
+
+		<footer role="contentinfo">
+			<p>Built using <a href="https://www.11ty.dev/">Eleventy</a>. The source is available on <a href="https://github.com/smccracken/chocolatesculptress">GitHub</a>.</p>
+		</footer>
+	</body>
+</html>
