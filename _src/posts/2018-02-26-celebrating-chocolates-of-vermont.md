@@ -1,0 +1,10 @@
+---
+title: Celebrating the Chocolates of Vermont
+tags: [chocolate, vermont, sculpture]
+---
+
+From retail shops to restaurants, one common theme I see across Vermont is an emphasis on local. Local artists, farmers, and food.
+
+The _[Chocolates of Vermont](http://www.lakechamplainchocolates.com/assortments/chocolates-of-vermont/)_ assortment from Lake Champlain Chocolates celebrates local flavors by featuring honey from local hives, cream from farmers we know, and maple syrup … oh man, the maple syrup. 
+
+This piece is a celebration of that chocolate celebration ... in more chocolate. It's like chocolate inception 😂

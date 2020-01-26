@@ -1,0 +1,6 @@
+{
+    "layout": "layouts/post",
+    "permalink": "journal/{{ page.date | date_to_permalink }}/{{ page.fileSlug }}/",
+    "type": "post"
+}
+  
