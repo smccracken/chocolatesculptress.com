@@ -1,0 +1,23 @@
+---
+title: "Emily McCracken's Chocolate Journal"
+lede: "You can call me chocolate-obsessed and I’d be totally ok with that."
+navtitle: Journal
+permalink: journal/
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    {{ lede }}
+
+    <section class="u-linear">
+        <h2>All Posts</h2>
+        <ul class="c-listing">
+        {% for post in collections.posts %}
+        <li class="c-listing__item">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+  </section>
+{% endblock %}

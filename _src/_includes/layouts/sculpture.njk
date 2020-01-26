@@ -1,0 +1,14 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<article>
+    <header>
+        <h1>{{ title }}</h1>
+        <time class="u-eyebrow">{{ page.date | date_formatted }}</time>
+    </header>
+
+    <section>
+    {{ content | safe }}
+    </section>
+</article>
+{% endblock %}

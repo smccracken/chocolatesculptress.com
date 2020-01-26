@@ -1,0 +1,23 @@
+---
+title: "Chocolate Sculptures"
+lede: "You can call me chocolate-obsessed and I’d be totally ok with that."
+navtitle: Sculptures
+permalink: sculptures/
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    {{ lede }}
+
+    <section class="u-linear">
+        <h2>All Sculptures</h2>
+        <ul class="c-listing">
+        {% for sculpture in collections.sculptures %}
+        <li class="c-listing__item">
+            <a href="{{ sculpture.url }}">{{ sculpture.data.title }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+  </section>
+{% endblock %}
