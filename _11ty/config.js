@@ -1,6 +1,7 @@
 const filters = require('./filters');
 const shortcodes = require('./shortcodes');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
 module.exports = function(eleventyConfig) {
   // Filters
@@ -15,8 +16,13 @@ module.exports = function(eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Collections
+  eleventyConfig.addCollection('bookmarks', collection => {
+    return collection.getFilteredByGlob('**/bookmarks/*.md').reverse();
+  });
+
   eleventyConfig.addCollection('sculptures', collection => {
     return collection.getFilteredByGlob('**/sculptures/*.md').reverse();
   });
@@ -25,8 +31,8 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('**/posts/*.md').reverse();
   });
 
-  eleventyConfig.addCollection('bookmarks', collection => {
-    return collection.getFilteredByGlob('**/bookmarks/*.md').reverse();
+  eleventyConfig.addCollection('press', collection => {
+    return collection.getFilteredByGlob('**/press/*.md').reverse();
   });
 
   // Transforms

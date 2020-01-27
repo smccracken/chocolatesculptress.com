@@ -1,36 +1,67 @@
 ---
-title: "Hi there, I'm Emily. A chocolate artist and instructor from Vermont."
-lede: "Some say I'm obsessed with chocolate. I take that as a compliment."
+title: "Hi there, I'm Emily. A chocolate artist, instructor, and enthusiast from Vermont."
+description: "Some say I'm obsessed with chocolate. I take that as a compliment."
 navtitle: Home
 permalink: index.html
 ---
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+<header class="u-linear c-header">
     <h1>{{ title }}</h1>
-    {{ lede }}
+    <p>Some say I'm obsessed with chocolate. I take it as a compliment. Making <a href="/sculptures/" title="Chocolate Sculptures">creations</a> out of something so universally loved is not only fun, but incredible rewarding when you see people realize what I've made is completely edible.</p>
+</header>
 
-    <section class="u-linear">
-        <h2>Recent Sculptures</h2>
-        <ul class="c-listing">
-        {% for sculpture in collections.sculptures | take(4) %}
-        <li class="c-listing__item">
-            <a href="{{ sculpture.url }}">{{ sculpture.data.title }}</a>
-        </li>
-        {% endfor %}
-        </ul>
-        <div>{% Link '/sculptures', 'View more' %}</div>
-     </section>
-     
-     <section class="u-linear">
-        <h2>Recent Posts</h2>
-        <ul class="c-listing">
-        {% for post in collections.posts | take(4) %}
-        <li class="c-listing__item">
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </li>
-        {% endfor %}
-        </ul>
-        <div>{% Link '/journal', 'View more' %}</div>
-  </section>
+<div class="intro u-linear">
+    <div class="c-avatar" style="--aspect-ratio: 1/1;">
+      <img src="/assets/img/home-collage.jpg" alt="A collage of Emily on a TV set and sculpting chocolate">
+    </div>
+    <p>The <a href="/about/" title="Becoming a Chocolate Sculptress">path to becoming a chocolate sculptress</a> has been long and winding. Along the way I've had the honor of studying with great chocolate artists while working for <a href="http://www.lakechamplainchocolates.com">Lake Champlain Chocolates</a>.</p>
+    <blockquote>
+        <p>&ldquo;There is nothing better than a friend, unless it is a friend with chocolate.&rdquo; – Linda Grayson</p>
+    </blockquote>
+    <p>Chocolate is a wonderful, finicky, and delicious medium to sculpt with. This ever-changing and challenging medium continues to inspire me.</p>
+    <p>Above all else I hope it brings a smile to your face.</p>
+</div>
+
+<section class="u-linear">
+    <h2>Featured Sculptures</h2>
+    <div class="o-grid" style="--min-column: 250px;">
+    {%- for sculpture in collections.sculptures | favorites(3) %}
+    <article class="c-card" id="product-1">
+        <div style="--aspect-ratio: 7/5;"><img src="/assets/sculptures/{{ sculpture.fileSlug }}/thumbnail.jpg" alt="Photo of {{ sculpture.data.title }}" loading="lazy"></div>
+        <h3 class="c-card__heading"><a href="{{ sculpture.url }}">{{ sculpture.data.title }}</a></h3>
+        <p class="c-card__description">{{ sculpture.data.description }}</p>
+        <span class="c-card__faux-anchor">
+        View Sculpture
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentcolor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+        </span>
+    </article>
+    {%- endfor %}
+    </div>
+    <div>{% Link '/sculptures', 'All sculptures' %}</div>
+</section>
+
+<section class="u-linear">
+    <h2>In the Press</h2>
+    {% Figure {
+        breakout: false,
+        ratio: 20/3.7,
+        src: '/assets/img/press-seen-on.jpg',
+        alt: title + ' graphics'
+    } %}
+    <div>{% Link '/press', 'All press' %}</div>
+</section>
+
+<section class="u-linear">
+    <h2>Recent Posts</h2>
+    <ul class="c-listing">
+    {% for post in collections.posts | take(5) %}
+    <li class="c-listing__item">
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+    {% endfor %}
+    </ul>
+    <div>{% Link '/journal', 'Read my chocolate journal' %}</div>
+</section>
 {% endblock %}

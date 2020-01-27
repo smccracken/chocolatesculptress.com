@@ -1,14 +1,32 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-<article>
-    <header>
-        <h1>{{ title }}</h1>
-        <time class="u-eyebrow">{{ page.date | date_formatted }}</time>
+  <article>
+    <header class="u-linear u-text-center u-margin-bottom-2">
+      <span class="u-eyebrow">Sculpture</span>
+      <h1 class="u-margin-top-0 u-font-size-xl">{{ title }}</h1>
+      {% if link %}
+        <div class="u-margin-top-025">{% Link link, null, true %}</div>
+      {% endif %}
+      <p class="u-font-size-md">{{ summary | safe }}</p>
+      {% if banner %}
+        {% Figure {
+          breakout: true,
+          src: '/assets/images/' + banner,
+          alt: title + ' graphics'
+        } %}
+      {% endif %}
+      {% include "components/tags.njk" %}
     </header>
+    <div class="u-linear">
+      {{ content | safe }}
 
-    <section>
-    {{ content | safe }}
-    </section>
-</article>
+      {% if tags and tags | includes('arthop') %}
+        {% Note {
+          label: "About the Art Hop",
+          text: "Lake Champlain Chocolates factory store is located on Pine Street in Burlington, VT -- part of Burlington's south end. Each year in September, a three day event is organized to celebrate the south end's amazing artist community. Businesses all up and down the Pine Street corridor become make-shift art galleries and there are over 500 participating artists showcasing paintings, sculptures, photography and yes ... even chocolate art. Visit [SEABA.com for more information](http://seaba.com/art-hop/) about the Art Hop."
+        } %}
+      {% endif %}
+    </div>
+  </article>
 {% endblock %}

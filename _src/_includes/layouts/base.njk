@@ -1,62 +1,43 @@
-<!doctype html>
-<html lang="en" class="fonts">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<meta property="og:site_name" content="{{ metadata.title }}">
-		<link rel="canonical" href="{{ metadata.url }}">
-
-		<title>{{ metadata.title }}</title>
-		<meta name="description" content="{{ metadata.description }}">
-
-		<meta name="application-name" content="{{ metadata.title }}">
-		<link rel="manifest" href="/webappmanifest.json">
-		
-		<meta name="msapplication-TileImage" content="/_assets/img/icon-144.png">
-		<meta name="theme-color" content="#6d252e">
-		<link rel="icon" type="image/png" href="/_assets/img/icon-32.png" sizes="32x32">
-
-		<script type="application/ld+json">
-			{
-				"@context": "http://schema.org",
-				"@type": "Organization",
-				"url": "{{ metadata.url }}",
-				"title": "{{ metadata.title }}",
-				"author_name": "{{ metadata.author.name }}",
-				"logo": "{{ metadata.url }}/_assets/img/profile.gif",
-				"sameAs" : [
-					"https://twitter.com/scottmccracken"
-				] 
-			}
-		</script>
-
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@scottmccracken">
-		<meta name="twitter:creator" content="@scottmccracken">
-		<meta property="og:site_name" content="{{ metadata.name }}">
-		<meta name="twitter:title" content="{{ metadata.title }}">
-		<meta property="og:title" content="{{ metadata.title }}">
-		<meta property="og:url" content="{{ metadata.url }}">
-		<meta name="twitter:description" content="{{ lede }}">
-		<meta property="og:description" content="{{ lede }}">
-		<meta name="twitter:image" content="{{ metadata.url }}/_assets/img/profile.gif">
-		<meta name="twitter:image:alt" content="{{ metadata.description }}">
-		<meta property="og:image" content="{{ metadata.url }}/_assets/img/profile.gif">
-		<meta property="og:image:alt" content="{{ metadata.description }}">
-
-		<meta name="author" content="{{ metadata.author.name }}">
-
-		<link rel="stylesheet" type="text/css" href="/_assets/css/screen.css">
-	</head>
-	<body>
-		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-			<a class="a11y-only" href="#what" title="Skip to main content">Skip to main content</a>
-			{% block content %}{% endblock %}
-		</main>
-
-		<footer role="contentinfo">
-			<p>Built using <a href="https://www.11ty.dev/">Eleventy</a>. The source is available on <a href="https://github.com/smccracken/chocolatesculptress">GitHub</a>.</p>
-		</footer>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0055FF" />
+  <meta name="robots" content="index,follow" />
+  <title>{% if title and page.url != '/' %}{{ title }}{% else %}UI Engineer{% endif %} - {{ site.title }}</title>
+  <meta name="description" content="{% if description %}{{ description | markdownify_inline | strip_html }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:title" content="{% if title and page.url != '/' %}{{ title }}{% else %}UI Engineer{% endif %} - {{ site.title }}">
+  <meta property="og:description" content="{% if description %}{{ description | markdownify_inline | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | permalink }}">
+  <meta property="og:image" content="{{ site.url }}{%if thumbnail %}{{ thumbnail }}{% else %}/assets/images/og-image.png{% endif %}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon apple-touch-icon" href="/assets/images/apple-touch-icon.png" sizes="180x180" type="image/png" />
+  <link rel="icon" href="/assets/images/favicon-96x96.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="/assets/images/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/assets/images/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="alternate" type="application/rss+xml" title="Feed for posts" href="/posts/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Feed for bookmarks" href="/bookmarks/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Feed for screencasts" href="/screencasts/feed.xml" />
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap" rel="stylesheet">
+  {% set css %}
+    {% include "assets/screen.css" %}
+    {% if primaryColor %}
+      :root { --color-primary: {{ primaryColor }}; }
+    {% endif %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+</head>
+<body>
+  <a href="#main-content" class="c-skip">Skip to main content</a>
+  <div class="o-container">
+    {% include "components/header.njk" %}
+    <main id="main-content">
+      {% block header %}{% endblock %}
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+  {% include "components/footer.njk" %}
+</body>
 </html>

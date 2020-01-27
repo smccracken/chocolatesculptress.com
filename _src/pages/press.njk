@@ -1,0 +1,23 @@
+---
+title: "Chocolate Sculptress Press"
+lede: "You can [contact me](/contact/) with any press inquiries."
+permalink: press/
+pagination:
+  data: collections.press
+  size: 100
+eleventyNavigation:
+  key: Press
+  order: 4
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<header class="u-linear">
+  <h1>{{ title }}</h1>
+  {{ lede | markdownify | safe }}
+</header>
+
+<section class="u-linear">
+    {% include "components/listing.njk" %}
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - press
+    - campaign
+    - print
+    - tv
+permalink: /tagged/{{ tag }}/index.html
+---
+{% extends "layouts/base.njk" %}
+
+{% block header %}
+  <header class="u-margin-bottom-3">
+    <h1 class="u-font-size-xxl">Tagged “{{ tag }}”</h1>
+  </header>
+{% endblock %}
+
+{% block content %}
+  <div class="o-content">
+    {% set taglist = collections.sculptures[tag] %}
+    <ul class="c-listing">
+    {% for entry in taglist | reverse %}
+      <li class="c-listing__item">
+        <a href="{{ entry.url }}">{{ entry.data.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

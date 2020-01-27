@@ -1,3 +1,0 @@
-#### About the Art Hop
-
-Lake Champlain Chocolates factory store is located on Pine Street in Burlington, VT -- part of Burlington's "south end." Each year in September, a three day event is organized to celebrate the south end's amazing artist community. Businesses all up and down the Pine Street corridor become make-shift art galleries and there are over 500 participating artists showcasing paintings, sculptures, photography and yes ... even chocolate art. Visit [SEABA.com for more information](http://seaba.com/art-hop/) about the Art Hop.

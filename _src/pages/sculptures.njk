@@ -1,23 +1,33 @@
 ---
 title: "Chocolate Sculptures"
-lede: "You can call me chocolate-obsessed and I’d be totally ok with that."
+lede: "Sculptures made entirely out of chocolate and colored cocoa butter. "
 navtitle: Sculptures
 permalink: sculptures/
+eleventyNavigation:
+  key: Chocolate Sculptures
+  order: 1
 ---
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
-    {{ lede }}
+<header class="u-linear c-header">
+    <h1 class="u-font-size-xl">{{ title }}</h1>
+    {{ lede | markdownify | safe }}
+<header>
 
-    <section class="u-linear">
-        <h2>All Sculptures</h2>
-        <ul class="c-listing">
-        {% for sculpture in collections.sculptures %}
-        <li class="c-listing__item">
-            <a href="{{ sculpture.url }}">{{ sculpture.data.title }}</a>
-        </li>
-        {% endfor %}
-        </ul>
-  </section>
+<section class="sculptures">
+    <div class="o-grid" style="--min-column: 250px;">
+    {%- for sculpture in collections.sculptures %}
+      <article class="c-card" id="product-1">
+        <div style="--aspect-ratio: 7/5;"><img src="/assets/sculptures/{{ sculpture.fileSlug }}/thumbnail.jpg" alt="Photo of {{ sculpture.data.title }}" loading="lazy"></div>
+        <h3 class="c-card__heading"><a href="{{ sculpture.url }}">{{ sculpture.data.title }}</a></h3>
+        <p class="c-card__description">{{ sculpture.data.description }}</p>
+        <span class="c-card__faux-anchor">
+          View Sculpture
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentcolor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+        </span>
+      </article>
+    {%- endfor %}
+    </div>
+</section>
 {% endblock %}
