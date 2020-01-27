@@ -41,6 +41,7 @@ module.exports = function(eleventyConfig) {
   // Passthroughs
   eleventyConfig
     .addPassthroughCopy('_src/assets')
+    .addPassthroughCopy('src/manifest.json')
     .addPassthroughCopy('_src/_redirects');
 
   // Setup

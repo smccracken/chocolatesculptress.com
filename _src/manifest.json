@@ -1,0 +1,37 @@
+{
+    "lang": "en",
+    "short_name": "CS",
+    "name": "Chocolate Sculptress",
+    "icons": [
+      {
+        "src": "/assets/img/photo-150.jpg",
+        "sizes": "150x150",
+        "type": "image/jpeg"
+      },
+      {
+        "src": "/assets/img/photo-300.jpg",
+        "sizes": "300x300",
+        "type": "image/jpeg"
+      },
+      {
+        "src": "/assets/img/photo-500.jpg",
+        "sizes": "500x500",
+        "type": "image/jpeg"
+      },
+      {
+        "src": "/assets/img/photo-600.jpg",
+        "sizes": "600x600",
+        "type": "image/jpeg"
+      },
+      {
+        "src": "/assets/img/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "minimal-ui",
+    "background_color": "#ffffff",
+    "theme_color": "#451f11"
+  }
+  
