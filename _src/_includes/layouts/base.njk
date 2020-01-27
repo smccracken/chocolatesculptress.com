@@ -27,6 +27,14 @@
     {% endif %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
+  <!-- Keep Using Google Analytics (for now) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35800082-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-35800082-1');
+  </script>
 </head>
 <body>
   <a href="#main-content" class="c-skip">Skip to main content</a>
