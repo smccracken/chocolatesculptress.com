@@ -26,7 +26,7 @@ Road trips and chocolate – two beloved American traditions, brought together f
 } %}
 
 {% Figure {
-    ratio: 5/7,
+    ratio: 2/3,
     src: '/assets/sculptures/road-trip/roadtrip-2.jpg',
     alt: title + ' graphics',
     lazyload: true

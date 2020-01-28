@@ -52,7 +52,7 @@ I tried to work in some of those symbols into my sculpture.
 } %}
 
 {% Figure {
-    ratio: 5/7,
+    ratio: 3/4,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-6.jpg',
     alt: title + ' graphics',
     lazyload: true

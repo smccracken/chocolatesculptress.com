@@ -38,3 +38,10 @@ Being invited to have a chocolate sculpture featured on Food Network is a dream 
     alt: title + ' graphics',
     lazyload: true
 } %}
+
+{% Figure {
+    src: '/assets/sculptures/cuckoo-clock/food-network-1.jpg',
+    ratio: 6.6/10,
+    alt: title + ' graphics',
+    lazyload: true
+} %}
