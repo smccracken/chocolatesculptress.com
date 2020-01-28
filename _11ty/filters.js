@@ -57,7 +57,7 @@ module.exports = {
 
   date_to_permalink: obj => {
     const date = parseDate(obj);
-    return DateTime.fromJSDate(date).toFormat('yyyy/MM');
+    return DateTime.fromJSDate(date).toFormat('yyyy');
   },
 
   date_formatted: obj => {

@@ -1,12 +1,19 @@
-<article class="c-entry">
+{% if pressEntry %}
+<article class="c-entry c-entry__press">
   <header>
     <time class="u-eyebrow">{{ entry.date | date_formatted }}</time>
     <h2 class="c-entry__heading"><a href="{{ entry.url }}">{{ entry.data.title }}</a></h2>
   </header>
   {% if entry.data.image %}
-  <section class="article-content">
-    <img src="/assets/img/{{ entry.data.image.src }}" alt="{{ entry.data.image.alt }}" />
-    <div class="u-linear">{{ entry.templateContent | safe }}</div>
-  </section>
+  <img src="/assets/img/{{ entry.data.image.src }}" alt="{{ entry.data.image.alt }}" />
   {% endif %}
+  <section class="u-linear">{{ entry.templateContent | safe }}</section>
 </article>
+{% else %}
+<article class="c-entry">
+  <header>
+    <time class="u-eyebrow">{{ entry.date | date_formatted }}</time>
+    <h2 class="c-entry__heading"><a href="{{ entry.url }}">{{ entry.data.title }}</a></h2>
+  </header>
+</article>
+{% endif %}
