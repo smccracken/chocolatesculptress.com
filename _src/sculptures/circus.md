@@ -2,14 +2,9 @@
 title: Chocolate Circus
 date: 2018-09-07
 tags: [chocolate, sculpture, retro, arthop]
+banner: /circus/chocolate-circus-banner.jpg
 ---
 
-{% Figure {
-    breakout: true,
-    src: '/assets/sculptures/circus/chocolate-circus-banner.jpg',
-    ratio: 16/9,
-    alt: title + ' graphics'
-} %}
 
 {% Figure {
     src: '/assets/sculptures/circus/chocolate-circus-2.jpg',
