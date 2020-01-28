@@ -118,6 +118,7 @@
   
   a:not([class]):hover,
   a:not([class]):focus {
+    color: var(--color-subtext);
     text-decoration-color: var(--color-subtext);
   }
   
@@ -127,7 +128,6 @@
   }
   
   blockquote {
-    margin-bottom: 2rem;
     padding-left: 1rem;
     border-left: .5rem solid var(--color-gray-300);
     font-style: italic;
@@ -305,7 +305,8 @@
 }
 
 .c-card__heading svg {
-    transition: transform ease-in-out .2s;
+  margin-left: 0.25em;
+  transition: transform ease-in-out .2s;
 }
 
 .c-card:focus-within .c-card__heading svg,
