@@ -535,6 +535,12 @@
     grid-gap: 2rem;
     margin-top: 2rem;
   }
+
+  article.post,
+  article.sculpture {
+    margin: 0 auto;
+    max-width: 50em;
+  }
   
   
   /**
