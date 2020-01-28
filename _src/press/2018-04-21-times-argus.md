@@ -1,6 +1,7 @@
 ---
 title: '"Edible Art" in Times Argus'
 tags: [print, press]
+link: https://www.timesargus.com/pleased-to-meet-you-spa-creates-a-world-of-fantasy/article_0d3d7b03-81b5-5f92-8991-65e3686483b8.html
 image:
   src: press-times-argus.jpg
   alt: Front page of the April 21st, 2018 Times Argus with Emily next to her chocolate phoneix sculpture in the Studio Arts Place gallery.

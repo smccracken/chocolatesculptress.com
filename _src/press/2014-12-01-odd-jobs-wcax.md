@@ -1,6 +1,5 @@
 ---
 title: '"Odd Jobs" Segment on WCAX'
-link: http://www.wcax.com/story/27640986/odd-jobs-chocolate-sculptor
 tags: [press, tv]
 image:
   src: press-odd-jobs.jpg

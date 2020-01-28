@@ -1,6 +1,7 @@
 ---
 title: 'Sculpture Featured on Food Network "Outrageous Chocolate" Special'
 tags: [tv, press]
+link: https://www.foodnetwork.com/shows/outrageous/episodes/chocolate
 image:
   src: press-food-network.jpg
   alt: On the left – Emily McCracken holding a bowl full of chocolate. On the right – a portion of the sculpture created for the special.
