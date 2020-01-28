@@ -1,6 +1,6 @@
 ---
 title: "Chocolate Sculptress Press"
-lede: "You can [contact me](/contact/) with any press inquiries."
+description: "It's always a blast being interviewed or asked to be on TV! Here's a selection of my media appearances, please feel free to [contact me](/contact/) with any future press inquiries."
 permalink: press/
 pagination:
   data: collections.press
@@ -12,12 +12,19 @@ eleventyNavigation:
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<header class="u-linear">
+<header class="u-linear c-header">
   <h1>{{ title }}</h1>
-  {{ lede | markdownify | safe }}
+  {{ description | markdownify | safe }}
 </header>
 
 <section class="u-linear">
-    {% include "components/listing.njk" %}
+  <ul class="c-listing c-listing--lg">
+  {% for entry in pagination.items %}
+  <li class="c-listing__item">
+    {% set pressEntry="true" %}
+    {% include "components/entry.njk" %}
+  </li>
+  {% endfor %}
+</ul>
 </section>
 {% endblock %}
