@@ -2,6 +2,7 @@
 title: Alice in Chocolateland
 date: 2015-09-02
 tags: [chocolate, sculpture, influence, arthop]
+share: /sculptures/adventures-in-wonderland/share.jpg
 ---
 
 {% Figure {
