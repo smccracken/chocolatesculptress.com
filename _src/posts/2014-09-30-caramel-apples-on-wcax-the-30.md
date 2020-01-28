@@ -7,4 +7,25 @@ Apple season is in full swing here in Vermont and there's no better time to star
 
 _Update: the video is no longer available on WCAX.com._
 
+{% Figure {
+    breakout: false,
+    ratio: 6/4,
+    src: '/assets/posts/2014/wcax-apple-1.jpg',
+    alt: title + ' graphics'
+} %}
+
+{% Figure {
+    breakout: false,
+    ratio: 7/5,
+    src: '/assets/posts/2014/wcax-apple-2.jpg',
+    alt: title + ' graphics'
+} %}
+
+{% Figure {
+    breakout: false,
+    ratio: 7/5,
+    src: '/assets/posts/2014/wcax-apple-3.jpg',
+    alt: title + ' graphics'
+} %}
+
 My thanks to the WCAX team for such a great time! 

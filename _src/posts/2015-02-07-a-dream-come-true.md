@@ -1,6 +1,7 @@
 ---
 title: A Dream Come True
 tags: [chocolate, sculpture, media]
+banner: 2015/dream-banner.jpg
 ---
 
 From the time I started sculpting with chocolate I had a goal of making it on the Food Network. It was ambitious, to say the least, especially when you consider the [strange path](http://www.chocolatesculptress.com/about/how-i-got-here) I took to becoming a chocolate sculptress.

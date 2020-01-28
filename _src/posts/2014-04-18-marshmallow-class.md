@@ -3,6 +3,13 @@ title: Marshmallow Class
 tags: [event, confections, vermont]
 ---
 
+{% Figure {
+    breakout: false,
+    ratio: 6/4,
+    src: '/assets/posts/2014/handmade-marshmallows-1.jpg',
+    alt: title + ' graphics'
+} %}
+
 OK, let's talk facts regarding these handmade and dipped marshmallows:
 
 1. They are life changing
