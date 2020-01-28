@@ -18,12 +18,13 @@ module.exports = {
     src,
     alt = '',
     caption = '',
+    figclass = '',
     ratio = '16/9',
     breakout = false,
     lazyload = false,
   }) {
     const img = html`
-      <figure>
+      <figure${figclass ? ` class="${figclass}"` : ''}>
         <div style="--aspect-ratio: ${ratio};">
           <img src="${src}" alt="${alt}" ${lazyload ? ` loading="lazy"` : ''} />
         </div>
