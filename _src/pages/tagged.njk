@@ -20,7 +20,7 @@ permalink: /tagged/{{ tag }}/index.html
 
 {% block content %}
   <div class="o-content">
-    {% set taglist = collections.sculptures[tag] %}
+    {% set taglist = collections[tag] %}
     <ul class="c-listing">
     {% for entry in taglist | reverse %}
       <li class="c-listing__item">
