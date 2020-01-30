@@ -1,9 +1,12 @@
 ---
-layout: layouts/markdown.njk
-title: "Emily McCracken Chocolate Portfolio"
+layout: layouts/article.njk
+title: "Emily McCracken's Chocolate Portfolio"
+summary: A selection of chocolate works
 permalink: portfolio/
+articleClass: portfolio
 ---
 
+{% block content %}
 {% Figure {
     ratio: 1.6/2.4,
     src: '/assets/sculptures/donut-shop/donut-shop-1.jpg',
@@ -186,3 +189,4 @@ permalink: portfolio/
     alt: title + ' graphics',
     lazyload: true
 } %}
+{% endblock %}

@@ -1,11 +1,11 @@
 ---
-layout: layouts/markdown.njk
+layout: layouts/article.njk
 title: The Path to Becoming a Chocolate Sculptress
-summary: I've been interested in three-dimensional art for as long as I can remember, but when I graduated from Montserrat College of Art with a degree in 3D illustration I wasn't sure where it would take me. How lucky am I that it brought me to chocolate? 
+summary: Hi there, my name is Emily and I've been interested in 3D illustration for as long as I can remember. Only trouble was I was never sure where that love would take me. How lucky am I that it brought me to chocolate? 
 permalink: /about/
 eleventyNavigation:
-  key: About Emily
-  order: 2
+  key: About
+  order: 3
 ---
 
 I've worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/) for the last 17 years where I focus on retail specialty products, teach chocolate bar classes, and create chocolate sculptures for in our stores. 
