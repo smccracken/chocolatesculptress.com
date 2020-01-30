@@ -35,7 +35,7 @@ permalink: index.html
       </article>
     {%- endfor %}
     </div>
-    <div>{% Link '/sculptures', 'All sculptures' %}</div>
+    <div class="u-center u-margin-top-3">{% Link '/sculptures', 'All sculptures' %}</div>
 </section>
 
 <section class="u-linear">
@@ -46,7 +46,7 @@ permalink: index.html
         src: '/assets/img/press-seen-on.jpg',
         alt: title + ' graphics'
     } %}
-    <div>{% Link '/press', 'All press' %}</div>
+    <div class="u-center u-margin-top-3">{% Link '/press', 'All press' %}</div>
 </section>
 
 <section class="u-linear">
@@ -58,6 +58,6 @@ permalink: index.html
     </li>
     {% endfor %}
     </ul>
-    <div>{% Link '/journal', 'Read my chocolate journal' %}</div>
+    <div class="u-center u-margin-top-3">{% Link '/journal', 'Read my chocolate journal' %}</div>
 </section>
 {% endblock %}
