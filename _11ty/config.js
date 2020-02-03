@@ -27,8 +27,44 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('**/sculptures/*.md').reverse();
   });
 
+  eleventyConfig.addCollection("taggedSculptures", function(collection) {
+    let resultArrays = {};
+    collection
+      .getFilteredByGlob('**/sculptures/*.md')
+      .reverse()
+      .forEach(function(item) {
+        if(Array.isArray(item.data["tags"])) {
+          for(let topicTag of item.data["tags"]) {
+            if( !resultArrays[topicTag] ) {
+              resultArrays[topicTag] = [];
+            }
+            resultArrays[topicTag].push(item);
+          }
+        }
+    });
+    return resultArrays;
+  });
+
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('**/posts/*.md').reverse();
+  });
+
+  eleventyConfig.addCollection("taggedPosts", function(collection) {
+    let resultArrays = {};
+    collection
+      .getFilteredByGlob('**/posts/*.md')
+      .reverse()
+      .forEach(function(item) {
+        if(Array.isArray(item.data["tags"])) {
+          for(let topicTag of item.data["tags"]) {
+            if( !resultArrays[topicTag] ) {
+              resultArrays[topicTag] = [];
+            }
+            resultArrays[topicTag].push(item);
+          }
+        }
+    });
+    return resultArrays;
   });
 
   eleventyConfig.addCollection('press', collection => {
