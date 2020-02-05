@@ -1,6 +1,6 @@
 # Chocolate Sculptress
 
-> Source files for Emily McCracken's [chocolatesculptress.com](https://www.chocolatesculptress.com) website. Built by [Scott McCracken](https://github.com/smccracken/) with [Eleventy](http://11ty.dev). 
+> Source files for Emily McCracken's [chocolatesculptress.com](https://chocolatesculptress.com) website. Built by [Scott McCracken](https://github.com/smccracken/) with [Eleventy](http://11ty.dev). 
 
 Special thanks to [Alex Carpenter's](https://github.com/alexcarpenter) [eleventy-boilerplate](https://github.com/alexcarpenter/eleventy-boilerplate) as a great starting point.
 
@@ -22,4 +22,4 @@ npm start
 
 ## Images
 
-All images are taken by [Scott McCracken](http://scottmccracken.net) and shouldn't be republished without prior consent.
+All images are taken by [Scott McCracken](https://scottmccracken.net) and shouldn't be republished without prior consent.
