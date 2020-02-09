@@ -1,5 +1,5 @@
 ---
-title: Chocolate Circus
+title: Sweet Circus
 date: 2018-09-07
 tags: [chocolate, sculpture, retro, arthop]
 banner: /circus/chocolate-circus-banner.jpg

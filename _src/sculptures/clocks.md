@@ -1,5 +1,5 @@
 ---
-title: Chocolate Clocks
+title: Clocks
 date: 2009-09-03
 tags: [chocolate, sculpture, clocks, inspiration, arthop]
 ---

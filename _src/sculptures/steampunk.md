@@ -1,5 +1,5 @@
 ---
-title: Chocolate Steampunk Sculptures
+title: Steampunk
 date: 2014-09-02
 tags: [chocolate, sculpture, robots, steampunk, arthop]
 ---

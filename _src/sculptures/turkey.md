@@ -1,5 +1,5 @@
 ---
-title: Chocolate Turkeys
+title: Gobble, Gobble
 date: 2014-11-22
 tags: [chocolate, sculpture, thanksgiving]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Retro Sci-Fi Movie Posters ... in Chocolate!
+title: Retro Sci-Fi Movie Posters
 date: 2011-09-02
 tags: [chocolate, sculpture, robots, movies, arthop]
 ---

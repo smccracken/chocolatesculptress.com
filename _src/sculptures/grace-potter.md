@@ -1,5 +1,5 @@
 ---
-title: Grace Potter Chocolate Album Celebration
+title: Grace Potter Album Release
 date: 2014-09-15
 tags: [chocolate, sculpture, music, celebrity]
 ---

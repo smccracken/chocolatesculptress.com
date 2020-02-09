@@ -1,6 +1,6 @@
 ---
 favorite: true
-title: The Chocolate Phoenix Rises
+title: Chocolate Phoenix Rises
 date: 2018-04-19
 tags: [chocolate, sculpture, bird, gallery]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Callebaut Chocolate Guitar
+title: Showpiece Guitar
 date: 2015-04-23
 tags: [chocolate, sculpture, music]
 ---

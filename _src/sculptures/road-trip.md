@@ -1,6 +1,6 @@
 ---
 favorite: true
-title: Chocolate Road Trip
+title: Take a Sweet Road Trip
 date: 2017-09-09
 tags: [chocolate, sculpture, americana, arthop]
 ---

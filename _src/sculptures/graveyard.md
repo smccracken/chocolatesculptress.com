@@ -1,5 +1,5 @@
 ---
-title: Chocolate Graveyard
+title: Graveyard
 date: 2017-10-21
 tags: [chocolate, sculpture, halloween]
 ---

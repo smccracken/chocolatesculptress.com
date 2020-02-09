@@ -1,5 +1,5 @@
 ---
-title: A Chocolate Tribute to Roy Lichtenstein
+title: Roy Lichtenstein Tribute
 date: 2012-09-02
 tags: [chocolate, sculpture, portrait, influence, art, arthop]
 ---

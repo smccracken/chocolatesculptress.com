@@ -1,5 +1,5 @@
 ---
-title: Chocolate Cuckoo Clock
+title: Working Cuckoo Clock
 summary: "A 5-foot tall, 65 lbs chocolate cuckoo clock that really tells time! Created for the Food Network special 'Outrageous Chocolate.'"
 date: 2014-12-18
 tags: [chocolate, sculpture, tv, birds]
