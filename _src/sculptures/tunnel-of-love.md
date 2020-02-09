@@ -6,9 +6,7 @@ banner: /tunnel-of-love/banner.jpg
 favorite: true
 ---
 
-The _Tunnel of Love_ was a popular name for an iconic early 20th century amusement park ride where riders were taken by two-passenger boats through dark tunnels.
-
-There were two iterations – either a relaxing ride through romatic scenary, or a spooky ride through things that'll make you scream. Either way the goal was to have couples cling to one another.
+The _Tunnel of Love_ was a popular name for an iconic early 20th century amusement park ride where riders were taken by two-passenger boats through dark tunnels. There were two iterations – either a relaxing ride through romatic scenary, or a spooky ride through things that'll make you scream. Either way the goal was to have couples cling to one another.
 
 For me the ride invokes that classic American nostalgia that I can't get enough of. Hop a ride. 😘
 
