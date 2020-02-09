@@ -2,7 +2,10 @@
 title: "Chocolate Sculptures"
 lede: "These sculptures are made entirely out of chocolate and decorated with different techniques using colored cocoa butter. They're 100% edible!"
 navtitle: Sculptures
-permalink: sculptures/
+permalink: /sculptures/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/{% endif %}
+pagination:
+  data: collections.sculptures
+  size: 15
 eleventyNavigation:
   key: Sculptures
   order: 1
@@ -17,12 +20,13 @@ eleventyNavigation:
 
 <section class="sculptures">
     <div class="o-grid" style="--min-column: 250px;">
-    {%- for sculpture in collections.sculptures %}
+    {%- for sculpture in pagination.items %}
       <article class="c-card" id="product-1">
         <div style="--aspect-ratio: 7/5;"><img src="/assets/sculptures/{{ sculpture.fileSlug }}/thumbnail.jpg" alt="Photo of {{ sculpture.data.title }}" loading="lazy"></div>
         <h3 class="c-card__heading"><a href="{{ sculpture.url }}">{{ sculpture.data.title }}<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="currentcolor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg></a></h3>
       </article>
     {%- endfor %}
     </div>
+    {% include "components/pagination.njk" %}
 </section>
 {% endblock %}
