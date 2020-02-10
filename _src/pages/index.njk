@@ -27,7 +27,7 @@ permalink: index.html
 
 <section class="u-linear">
     <h2>Featured Sculptures</h2>
-    <div class="o-grid" style="--min-column: 250px;">
+    <div class="o-grid">
     {%- for sculpture in collections.sculptures | favorites(3) %}
       <article class="c-card">
         <div style="--aspect-ratio: 7/5;"><img src="/assets/sculptures/{{ sculpture.fileSlug }}/thumbnail.jpg" alt="Photo of {{ sculpture.data.title }}" loading="lazy"></div>
