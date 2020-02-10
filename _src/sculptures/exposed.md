@@ -5,7 +5,7 @@ tags: [chocolate, sculpture, sign, gallery]
 banner: /exposed/banner.jpg
 ---
 
-I was asked to make a chocolate centerpiece for a party celebrating the [_Time Lapse: Contemporary Analog Photography_](https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/) exhibit at Shelburne Museum. The theme of the party was "exposed." 
+I was asked to create a chocolate centerpiece for [EXPOSED: The Barnstormers 7th Annual Winter Soirée](https://shelburnemuseum.org/event/exposed-the-barnstormers-7th-annual-winter-soiree/) at the Shelburne Museum. The party celebrated the ["Time Lapse: Contemporary Analog Photography"](https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/) exhibit at Shelburne Museum which features the work of photographers using 19th-century photographic techniques.
 
 {% Figure {
     ratio: 4/6,
@@ -14,16 +14,14 @@ I was asked to make a chocolate centerpiece for a party celebrating the [_Time L
     lazyload: true
 } %}
 
-The exhibit celebrates artists who use the darkroom and 19th-century photographic techniques to create vintage works of art. Particularly those that <q cite="https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/">experiment with the mutable medium of photography and employing a variety of materials—from cyanotype dresses made of tamale wrappers to a three-dimensional shelter displaying tintype portraits</q>.
-
-I used an old TinType camera as inspiration.
-
 {% Figure {
     ratio: 6/4,
     src: '/assets/sculptures/exposed/exposed-5.jpg',
     alt: title + ' chocolate sculpture',
     lazyload: true
 } %}
+
+My inspiration was the cameras used for TinType photography which reached its peak popularity around 1870. I love the depth of these old cameras and used some relief techniques to pull the camera lens away from the base of the centerpiece. 
 
 {% Figure {
     ratio: 6/4,
@@ -39,4 +37,6 @@ I used an old TinType camera as inspiration.
     lazyload: true
 } %}
 
-The exhibit is on display at the [Shelburne Museum](https://shelburnemuseum.org) until March 8th, 2020.
+As [Shelburne Museum](https://shelburnemuseum.org)  describes it this exhibit highlights those that <q cite="https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/">experiment with the mutable medium of photography and employing a variety of materials—from cyanotype dresses made of tamale wrappers to a three-dimensional shelter displaying tintype portraits</q>.
+
+The exhibit is on display until March 8th, 2020.
