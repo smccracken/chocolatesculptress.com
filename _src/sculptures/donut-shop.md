@@ -2,7 +2,7 @@
 favorite: true
 title: Donut Shop
 date: 2017-09-13
-tags: [chocolate, sculpture, retro, gallery]
+tags: [chocolate, sculpture, retro, gallery, vermont]
 ---
 
 {% Figure {

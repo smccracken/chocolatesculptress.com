@@ -1,7 +1,7 @@
 ---
 title: Burlington Jazz Fest
 date: 2018-04-19
-tags: [chocolate, sculpture, vermont]
+tags: [chocolate, centerpiece, sculpture, vermont]
 ---
 
 {% Figure {

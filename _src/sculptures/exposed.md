@@ -1,7 +1,7 @@
 ---
 title: Exposed
 date: 2020-02-08
-tags: [chocolate, sculpture, sign, gallery]
+tags: [chocolate, centerpiece, sculpture, vermont]
 banner: /exposed/banner.jpg
 ---
 
