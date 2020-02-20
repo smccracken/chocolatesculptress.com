@@ -124,7 +124,7 @@ module.exports = {
         ${cite
           ? `<figcaption class="c-quote__cite${
               size ? ` u-text-align-right` : ''
-            }">${markdown.renderInline(cite)}</figcaption>`
+            }"><cite>${markdown.renderInline(cite)}</cite></figcaption>`
           : ''}
       </figure>
     `;
