@@ -19,8 +19,9 @@
   <link rel="manifest" href="{{ site.url }}/manifest.json" />
   <link rel="alternate" type="application/rss+xml" title="Feed for journal" href="{{ site.url }}/journal/feed.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for sculptures" href="{{ site.url }}/sculptures/feed.xml" />
-  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/fonts/bitter.woff2" as="font" type="font/woff2" crossorigin>
   {% set css %}
+    {% include "assets/fonts.css" %}
     {% include "assets/screen.css" %}
     {% if primaryColor %}
       :root { --color-primary: {{ primaryColor }}; }

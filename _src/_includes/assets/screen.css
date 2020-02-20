@@ -10,8 +10,8 @@
    */
 
    :root {
-    --font-family-system: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    --font-family-code: Menlo, Monaco, monospace;
+    --font-family-base: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --font-family-slab: 'Bitter', Georgia, sans-serif;
     --color-beige: #fff9eb;
     --color-red: #ff5f2d;
     --color-red-dark: #c24924;
@@ -74,7 +74,7 @@
     -webkit-box-direction: normal;
             flex-direction: column;
     min-height: calc(100vh - 4vw);
-    font-family: var(--font-family-system);
+    font-family: var(--font-family-base);
     line-height: var(--line-height-loose);
     text-rendering: optimizeLegibility;
     color: var(--color-gray-900);
@@ -91,10 +91,11 @@
   h1,
   h2,
   h3 {
-    font-family: Bitter,serif;
+    font-family: var(--font-family-slab);
     line-height: 1.125;
     color: var(--text);
     line-height: var(--line-height-strict);
+    letter-spacing: -0.01em;
     font-weight: 700;
   }
   

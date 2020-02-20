@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Bitter';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: local('Bitter'),
+         url('/assets/fonts/bitter.woff2') format('woff2');
+}
