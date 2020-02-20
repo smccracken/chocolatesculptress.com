@@ -55,6 +55,8 @@ module.exports = {
 
   strip_html: str => str.replace(/<script.*?<\/script>|<!--.*?-->|<style.*?<\/style>|<.*?>/g, ''),
 
+  widont: str => str.replace(/\s([^\s<]+)\s*$/,'\u00A0$1'),
+  
   date_to_permalink: obj => {
     const date = parseDate(obj);
     return DateTime.fromJSDate(date).toFormat('yyyy');
