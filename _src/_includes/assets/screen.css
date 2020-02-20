@@ -998,6 +998,7 @@ a[href="#footer-menu"] {
 .c-pagination {
 	display: -webkit-box;
 	display: flex;
+	margin-top: 3rem;
 }
 
 .c-pagination__item[rel="prev"] {
