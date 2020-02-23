@@ -30,8 +30,10 @@ Lewis Carroll's Alice's Adventures in Wonderland and the follow-up, Through the 
 
 For the 2015 Art Hop it seemed natural to combine my love of these stories with my love of chocolate. But with characters so rich and vibrant I knew the typical browns and whites of chocolate weren't going to cut it.
 
-> “Sometimes I’ve believed as many as six impossible things before breakfast”
-> — Lewis Caroll
+{% Quote {
+    "text": "Sometimes I’ve believed as many as six impossible things before breakfast",
+    "cite": "Lewis Caroll"
+} %}
 
 It was time to dust off the spray gun. 
 
