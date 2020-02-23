@@ -5,7 +5,7 @@ tags: [chocolate, centerpiece, sculpture, vermont]
 banner: /exposed/banner.jpg
 ---
 
-I was asked to create a chocolate centerpiece for [EXPOSED: The Barnstormers 7th Annual Winter Soirée](https://shelburnemuseum.org/event/exposed-the-barnstormers-7th-annual-winter-soiree/) at the Shelburne Museum. The party celebrated the ["Time Lapse: Contemporary Analog Photography"](https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/) exhibit at Shelburne Museum which features the work of photographers using 19th-century photographic techniques.
+I was asked to create a chocolate centerpiece for [EXPOSED: The Barnstormers 7th Annual Winter Soirée](https://shelburnemuseum.org/event/exposed-the-barnstormers-7th-annual-winter-soiree/) at the Shelburne Museum. The party celebrated the ["Time Lapse: Contemporary Analog Photography"](https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/) exhibit, featuring modern photographers using 19th-century photographic techniques.
 
 {% Figure {
     ratio: 4/6,
@@ -21,7 +21,7 @@ I was asked to create a chocolate centerpiece for [EXPOSED: The Barnstormers 7th
     lazyload: true
 } %}
 
-My inspiration was the cameras used for TinType photography which reached its peak popularity around 1870. I love the depth of these old cameras and used some relief techniques to pull the camera lens away from the base of the centerpiece. 
+During my research I stumbled upon some old TinTypes and fell in love with the cameras they used to create early photographs. There's just something so lovely about the depth of these cameras and all their tactile buttons and levers.
 
 {% Figure {
     ratio: 6/4,
@@ -37,6 +37,6 @@ My inspiration was the cameras used for TinType photography which reached its pe
     lazyload: true
 } %}
 
-As [Shelburne Museum](https://shelburnemuseum.org)  describes it this exhibit highlights those that <q cite="https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/">experiment with the mutable medium of photography and employing a variety of materials—from cyanotype dresses made of tamale wrappers to a three-dimensional shelter displaying tintype portraits</q>.
+As [Shelburne Museum](https://shelburnemuseum.org)  describes it, the exhibit highlights those that <q cite="https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/">experiment with the mutable medium of photography and employing a variety of materials—from cyanotype dresses made of tamale wrappers to a three-dimensional shelter displaying tintype portraits</q>.
 
-The exhibit is on display until March 8th, 2020.
+The exhibit is on display until March 8th, 2020. The chocolate centerpiece was devoured at the party 😄
