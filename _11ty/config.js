@@ -1,5 +1,6 @@
 const filters = require('./filters');
 const shortcodes = require('./shortcodes');
+const fyi = require('./shortcodes/fyi.js');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
@@ -9,10 +10,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
+
   // Shortcodes
   Object.keys(shortcodes).forEach(shortCodeName => {
     eleventyConfig.addShortcode(shortCodeName, shortcodes[shortCodeName]);
   });
+
+  // Paired Shortcodes
+  eleventyConfig.addPairedShortcode('fyi', fyi);
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -72,7 +77,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Transforms
-  eleventyConfig.addTransform('htmlmin', filters.htmlmin);
+  // eleventyConfig.addTransform('htmlmin', filters.htmlmin);
 
   // Passthroughs
   eleventyConfig

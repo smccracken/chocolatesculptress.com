@@ -1,0 +1,6 @@
+.c-fyi svg {
+	transform: rotate(-2deg);
+	fill: var(--color-maroon);
+	width: 10rem;
+	padding-right: 2rem;
+}
