@@ -1,3 +1,14 @@
+{% set coreStyles = [
+  '/tokens.css',
+  '/global.css',
+  '/global/header.css',
+  '/global/footer.css',
+  '/global/nav.css',
+  '/components/button.css',
+  '/components/skip.css',
+  '/utilities/flow.css',
+  '/utilities/visually-hidden.css'
+]%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +31,7 @@
   <link rel="alternate" type="application/rss+xml" title="Feed for journal" href="{{ site.url }}/journal/feed.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for sculptures" href="{{ site.url }}/sculptures/feed.xml" />
   <link rel="preload" href="/assets/fonts/bitter.woff2" as="font" type="font/woff2" crossorigin>
-  {% set css %}
-    {% include "assets/fonts.css" %}
-    {% include "assets/screen.css" %}
-    {% if primaryColor %}
-      :root { --color-primary: {{ primaryColor }}; }
-    {% endif %}
-  {% endset %}
-  <style>{{ css | cssmin | safe }}</style>
+  <style>{{ helpers.getCSS(coreStyles, layoutStyles) | safe }}</style>
   <!-- Keep Using Google Analytics (for now) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35800082-1"></script>
   <script>
@@ -42,7 +46,6 @@
   <div class="o-container">
     {% include "components/header.njk" %}
     <main id="main-content">
-      {% block header %}{% endblock %}
       {% block content %}{% endblock %}
     </main>
   </div>

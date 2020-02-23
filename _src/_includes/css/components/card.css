@@ -1,0 +1,115 @@
+.c-card {
+	position: relative;
+	display: -webkit-box;
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 0.5rem;
+	height: 100%;
+	background-color: var(--color-white);
+	border: 1px solid var(--border-color);
+	-webkit-transition: border-color ease-in-out 0.2s;
+	transition: border-color ease-in-out 0.2s;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.035);
+}
+
+.c-card div {
+	overflow: hidden;
+}
+
+.c-card img {
+	transition: transform ease-in-out 0.2s;
+}
+
+.c-card:focus-within,
+.c-card:hover {
+	border-color: var(--color-gray-400);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.c-card:target {
+	border-color: var(--color-blue);
+}
+
+.c-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0.6px 2.2px rgba(0, 0, 0, 0.008),
+		0 1.3px 5.3px rgba(0, 0, 0, 0.012), 0 2.5px 10px rgba(0, 0, 0, 0.015),
+		0 4.5px 17.9px rgba(0, 0, 0, 0.018), 0 8.4px 33.4px rgba(0, 0, 0, 0.022),
+		0 20px 80px rgba(0, 0, 0, 0.03);
+	opacity: 0;
+	-webkit-transition: opacity ease-in-out 0.2s;
+	transition: opacity ease-in-out 0.2s;
+	z-index: -1;
+}
+
+.c-card:focus-within::before,
+.c-card:hover::before {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.c-card:focus-within img,
+.c-card:hover img {
+	transform: scale(1.05);
+}
+
+.c-card__heading {
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+.c-card__heading svg {
+	margin-left: 0.25em;
+	-webkit-transition: -webkit-transform ease-in-out 0.2s;
+	transition: -webkit-transform ease-in-out 0.2s;
+	transition: transform ease-in-out 0.2s;
+	transition: transform ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
+}
+
+.c-card:focus-within .c-card__heading svg,
+.c-card:hover .c-card__heading svg {
+	-webkit-transform: translateX(5px);
+	transform: translateX(5px);
+}
+
+.c-card * + .c-card__heading {
+	margin-top: 1rem;
+}
+
+.c-card__heading a {
+	text-decoration: none;
+}
+
+.c-card__heading a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius-lg);
+	z-index: 10;
+}
+
+.c-card__address,
+.c-card__description {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	color: #777;
+}
+
+.c-card__faux-anchor {
+	margin-top: auto;
+	display: -webkit-inline-box;
+	display: inline-flex;
+	-webkit-box-align: center;
+	align-items: center;
+	color: var(--color-blue);
+}

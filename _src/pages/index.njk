@@ -4,7 +4,13 @@ description: "Some say I'm obesses with chocolate. I take it as a compliment. Ch
 navtitle: Home
 permalink: index.html
 ---
-{% extends "layouts/base.njk" %}
+{% set layoutStyles = [
+    '/components/avatar.css',
+    '/components/entry.css',
+    '/components/listing.css',
+    '/utilities/eyebrow.css'
+]%}
+{% extends "layouts/page.njk" %}
 
 {% block content %}
 <header class="u-linear c-header">
@@ -46,11 +52,8 @@ permalink: index.html
 <section class="u-linear">
     <h2>Recent Posts</h2>
     <ul class="c-listing">
-    {% for post in collections.posts | take(5) %}
-    <li class="c-listing__item">
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </li>
-    {% endfor %}
+    {% set entries = collections.posts | take(3) %}
+    {% include "components/listing.njk" %}
     </ul>
     <div class="u-center u-margin-top-3">{% Link '/journal', 'Read my chocolate journal' %}</div>
 </section>

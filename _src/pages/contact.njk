@@ -1,13 +1,23 @@
 ---
 title: Contact Emily
-summary: Have a question? I'd love to hear from you! Use the form below to send me a note or reach out on my [Facebook page](https://www.facebook.com/chocolatesculptress/).
+description: Have a question or press request? I'd love to hear from you! Use the form below to send me a note or reach out on my [Facebook page](https://www.facebook.com/chocolatesculptress/).
 permalink: /contact/
 eleventyNavigation:
   key: Contact
   order: 5
 ---
+{% set layoutStyles = [
+  '/components/form.css'
+]%}
 {% extends 'layouts/page.njk' %}
 
 {% block content %}
+  <header class="u-linear c-header">
+    <h1 class="u-font-size-xl">{{ title | widont }}</h1>
+    {{ description | markdownify | safe }}
+  </header>
+
+  <section class="form-contact">
   {% include "components/form-contact.njk" %}
+  </section>
 {% endblock %}

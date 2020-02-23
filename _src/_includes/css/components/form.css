@@ -1,0 +1,52 @@
+/**
+   * FORM
+   */
+
+/* .c-form {} */
+
+.c-form--boxed {
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--color-gray-300);
+	background-color: var(--color-gray-100);
+}
+
+.c-form__row + .c-form__row {
+	margin-top: 1rem;
+}
+
+.c-form__row--inline {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: end;
+	align-items: flex-end;
+}
+
+.c-form__row-item:first-of-type {
+	-webkit-box-flex: 1;
+	flex: 1;
+	margin-right: 1rem;
+}
+
+.c-form__label {
+	display: block;
+	margin-bottom: 0.25rem;
+}
+
+.c-form__input {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid var(--color-gray-300);
+	background-color: var(--color-white);
+	font: inherit;
+}
+
+.c-form__input:focus {
+	outline: var(--outline);
+	outline-offset: 0;
+}
+
+.c-form--boxed .c-form__input {
+	background-color: #fff;
+}

@@ -10,6 +10,12 @@ eleventyNavigation:
   key: Journal
   order: 2
 ---
+{% set layoutStyles = [
+  '/components/entry.css',
+  '/components/listing.css',
+  '/components/pagination.css',
+  '/utilities/eyebrow.css'
+]%}
 {% extends "layouts/base.njk" %}
 
 {% block content %}
@@ -19,6 +25,7 @@ eleventyNavigation:
 </header>
 
 <section class="u-linear">
+    {% set entries = pagination.items %}
     {% include "components/listing.njk" %}
     {% include "components/pagination.njk" %}
 </section>

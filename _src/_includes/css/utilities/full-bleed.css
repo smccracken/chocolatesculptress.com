@@ -1,0 +1,37 @@
+.u-breakout {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.u-full-bleed {
+	overflow: hidden;
+	width: 96vw;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--color-beige-dark);
+	border-color: var(--color-gray-400);
+	border-style: solid;
+	border-width: 1px 0;
+}
+
+.u-full-bleed__container {
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+}
+
+.u-full-bleed__icon svg {
+	transform: rotate(-2deg);
+	fill: var(--color-maroon);
+	width: 8rem;
+	padding-right: 2rem;
+}

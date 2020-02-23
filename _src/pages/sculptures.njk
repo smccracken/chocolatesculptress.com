@@ -10,6 +10,10 @@ eleventyNavigation:
   key: Sculptures
   order: 1
 ---
+{% set layoutStyles = [
+  '/components/card.css',
+  '/components/pagination.css'
+]%}
 {% extends "layouts/base.njk" %}
 
 {% block content %}

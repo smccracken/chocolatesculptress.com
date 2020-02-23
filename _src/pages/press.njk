@@ -8,6 +8,12 @@ pagination:
 eleventyNavigation:
   parent: About
 ---
+{% set layoutStyles = [
+  '/components/entry.css',
+  '/components/listing.css',
+  '/components/press.css',
+  '/utilities/eyebrow.css'
+]%}
 {% extends "layouts/base.njk" %}
 
 {% block content %}

@@ -1,0 +1,28 @@
+/**
+   * NOTE
+   */
+
+   .c-note {
+	padding: 1rem;
+	border: 1px solid var(--color-gray-400);
+	border-radius: var(--border-radius);
+}
+
+.c-note--warning {
+	border-color: var(--color-yellow);
+	background-color: #fff8e4;
+}
+
+.c-note__label {
+	font-weight: 700;
+}
+
+.c-note__anchor {
+	text-decoration: none;
+	color: var(--color-primary);
+}
+
+.c-note__anchor svg {
+	margin-left: 0.25rem;
+	font-size: 0.9em;
+}

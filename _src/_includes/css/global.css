@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Bitter';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: local('Bitter'),
+         url('/assets/fonts/bitter.woff2') format('woff2');
+    /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;*/
+}
+
+/* ==========================================================================
+     BASE
+     ========================================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	background-color: var(--color-white);
+	padding: 2vw;
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 1.125rem;
+	}
+}
+
+body {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	min-height: calc(100vh - 4vw);
+	font-family: var(--font-family-base);
+	line-height: var(--line-height-loose);
+	text-rendering: optimizeLegibility;
+	color: var(--color-gray-900);
+	overflow-x: hidden;
+	background-color: var(--color-beige);
+	color: var(--color-text);
+	padding-top: 20px;
+}
+
+main {
+	margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-family-slab);
+	line-height: 1.125;
+	color: var(--text);
+	line-height: var(--line-height-strict);
+	letter-spacing: -0.01em;
+	font-weight: 700;
+}
+
+img,
+svg {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+p:not([class]) {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+		Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	font-weight: 400;
+	color: var(--text);
+	line-height: 1.65;
+}
+
+ul:not([class]) {
+	padding-left: 1.2rem;
+}
+
+a:not([class]) {
+	color: var(--color-red-dark);
+	-webkit-text-decoration-skip-ink: unset;
+	text-decoration-skip-ink: unset;
+	-webkit-text-decoration-style: wavy;
+	text-decoration-style: wavy;
+	-webkit-transition: 0.1s ease-in, box-shadow 0.1s ease-in;
+	transition: 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+a:not([class]):hover,
+a:not([class]):focus {
+	color: var(--color-subtext);
+	-webkit-text-decoration-color: var(--color-subtext);
+	text-decoration-color: var(--color-subtext);
+}
+
+a:focus {
+	outline: var(--outline);
+	outline-offset: 0;
+}
+
+blockquote {
+	padding-left: 1rem;
+	border-left: 0.5rem solid var(--color-yellow);
+}
+
+blockquote p:not([class]) {
+  font-family: var(--font-family-slab);
+  font-size: 125%; 
+	font-style: italic;
+  line-height: var(--line-height-xloose);
+	color: var(--color-maroon-muted);
+}
+
+@media (min-width: 640px) {
+	figure[class*="pull"] {
+		float: left;
+		width: 35%;
+		margin-right: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	figure[class*="push"] {
+		float: right;
+		width: 35%;
+		margin-left: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	figure[class*="wide"] {
+		width: 50%;
+	}
+}
+
+figcaption {
+	margin-top: 1rem;
+	color: var(--color-gray-500);
+	font-size: smaller;
+}
+
+dt {
+	font-weight: 700;
+}
+
+mark {
+	background-color: var(--color-yellow-light);
+}
+
+ul ul {
+	list-style-type: disc;
+}
+
+hr {
+	margin-top: 2rem !important;
+	margin-bottom: 2rem;
+	border: 0;
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-gray-300);
+}
+
+/* ==========================================================================
+     OBJECTS
+     ========================================================================== */
+
+/**
+   * ASPECT-RATIO
+   */
+
+[style*="--aspect-ratio"] > :first-child {
+	height: auto;
+	width: 100%;
+}
+
+@supports (--custom: property) {
+	[style*="--aspect-ratio"] {
+		position: relative;
+		width: 100%;
+		background-color: var(--color-gray-100);
+	}
+
+	[style*="--aspect-ratio"]::before {
+		content: "";
+		display: block;
+		padding-bottom: calc(100% / (var(--aspect-ratio)));
+	}
+
+	[style*="--aspect-ratio"] > :first-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+/**
+   * CONTAINER
+   */
+
+.o-container {
+	width: 100%;
+	max-width: 60.5rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.o-container--lg {
+	max-width: 62.5rem;
+}
+
+/**
+   * COLUMNS
+   */
+
+.o-columns {
+	list-style: none;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 2rem;
+	-moz-column-gap: 2rem;
+	column-gap: 2rem;
+}
+
+/**
+   * GRID
+   */
+
+.o-grid article {
+	float: left;
+	width: 300px;
+	margin: 0 20px 20px 0;
+}
+
+@supports (display: grid) {
+	.o-grid {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
+	.o-grid article {
+		width: unset;
+		margin: unset;
+	}
+}

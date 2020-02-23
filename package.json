@@ -29,5 +29,9 @@
     "markdown-it-anchor": "^5.0.2",
     "ramda": "^0.26.1",
     "terser": "^4.4.3"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "uglifycss": "0.0.29"
   }
 }

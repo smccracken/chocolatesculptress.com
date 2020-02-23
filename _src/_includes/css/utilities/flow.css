@@ -1,0 +1,21 @@
+.u-linear + .u-linear {
+	margin-top: 3rem;
+}
+
+.u-linear > * + * {
+	margin-top: 1.125rem;
+}
+
+.u-linear > * + h2,
+.u-linear > * + h3,
+.u-linear > * + .c-quote {
+	margin-top: 2rem;
+}
+
+.u-linear > * + .c-pagination {
+  margin-top: 3rem;
+}
+
+.u-linear > * + blockquote {
+	margin-top: 2rem;
+}
