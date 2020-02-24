@@ -20,7 +20,7 @@
 html {
 	-webkit-text-size-adjust: 100%;
 	background-color: var(--color-white);
-	padding: 2vw;
+	padding: 1rem;
 }
 
 @media (min-width: 768px) {
