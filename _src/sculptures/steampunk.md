@@ -4,7 +4,7 @@ date: 2014-09-02
 tags: [chocolate, sculpture, robots, steampunk, arthop]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 7/5,
     src: '/assets/sculptures/steampunk/steampunk-1.jpg',
@@ -17,14 +17,14 @@ My 2014 Art Hop exhibit was based on the whimsy and industrial style of steampun
 
 > "If Jules Verne or H.G. Wells were writing their science fiction today, it would be considered “steampunk.”
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/steampunk/steampunk-2.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/steampunk/steampunk-3.jpg',
     alt: title + ' graphics',
@@ -39,7 +39,7 @@ There's something very romantic and engaging about steampunk. Maybe it's the ela
 * **Geared Owl**: My 14-month old daughter's favorite
 * **Submarine**: Utilitarian deep sea traversal
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 5/7,
     src: '/assets/sculptures/steampunk/steampunk-5.jpg',
@@ -47,7 +47,7 @@ There's something very romantic and engaging about steampunk. Maybe it's the ela
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 5/7,
     src: '/assets/sculptures/steampunk/steampunk-4.jpg',
@@ -57,7 +57,7 @@ There's something very romantic and engaging about steampunk. Maybe it's the ela
 
 My sculptures will be on display at South End Kitchen in Burlington, VT starting on September 5th, 2014. Come check them out in person!
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 5/7,
     src: '/assets/sculptures/steampunk/steampunk-7.jpg',

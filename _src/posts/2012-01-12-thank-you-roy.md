@@ -7,7 +7,7 @@ I made a chocolate "thank you" card for Roy Feldman from the SEABA community. I 
 
 SEABA is the south end arts and business association. They help foster and promote the arts district in Burlington, VT's south end.
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 4/6,
     src: '/assets/posts/2012/roy-feldman-chocolate.jpg',

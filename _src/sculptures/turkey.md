@@ -4,7 +4,7 @@ date: 2014-11-22
 tags: [chocolate, sculpture, thanksgiving]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 7/5,
     src: '/assets/sculptures/turkey/chocolate-turkey-6.jpg',
@@ -13,21 +13,21 @@ tags: [chocolate, sculpture, thanksgiving]
 
 Nearly everyone loves a good turkey on Thanksgiving. I mean, what's better than the slow roasted aroma that drifts out of the stove during the holidays? I'll tell you what: a turkey made of 100% chocolate. 
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/turkey/chocolate-turkey-4.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/turkey/chocolate-turkey-5.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/turkey/chocolate-turkey-1.jpg',
     alt: title + ' graphics',
@@ -44,7 +44,7 @@ Let's take a look at the pros and cons of chocolate turkeys:
 
 I'd say the chocolate turkey wins out.
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/turkey/chocolate-turkey-3.jpg',
     alt: title + ' graphics',

@@ -4,7 +4,7 @@ date: 2016-02-05
 tags: [chocolate, sculpture, influence, valentinesday]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 5/7,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-1.jpg',
@@ -13,14 +13,14 @@ tags: [chocolate, sculpture, influence, valentinesday]
 
 Norman Collins, known as "Sailor Jerry", was an American artist famous for tattooing sailors. His tattoos used a revolutionary blend of vivid colors and bold icons, which has influenced the tattoo industry ever since. Even if you've never heard his name, I'm betting you've [seen his work](http://sailorjerry.com/en/tattoos/flash-meanings/).
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-2.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-3.jpg',
     alt: title + ' graphics',
@@ -37,21 +37,21 @@ I've always been drawn to Sailor Jerry's art. First, it bleeds Americana and the
 
 I tried to work in some of those symbols into my sculpture.
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-4.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-7.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 3/4,
     src: '/assets/sculptures/sailor-jerry/sailor-jerry-6.jpg',
     alt: title + ' graphics',

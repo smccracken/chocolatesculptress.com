@@ -4,7 +4,7 @@ date: 2012-09-02
 tags: [chocolate, sculpture, portrait, influence, art, arthop]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/lichtenstein/lichtenstein-1.jpg',
     ratio: 16/9,
@@ -17,14 +17,14 @@ Roy Lichentenstein was an American pop artist, who used vibrant, bold colors and
 
 > "Pop Art looks out into the world. It doesn't look like a painting of something, it looks like the thing itself." - Roy Lichtenstein
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/lichtenstein/lichtenstein-3.jpg',
     ratio: 5/7,
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/lichtenstein/lichtenstein-4.jpg',
     ratio: 5/7,
     alt: title + ' graphics',
@@ -35,14 +35,14 @@ Replicating his work in chocolate was not easy. First, chocolate and bright bold
 
 Another interesting challenge was how some of Lichtenstein's most famous sculptures had see through elements which I tried to bring to my work as well.
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/lichtenstein/lichtenstein-6.jpg',
     ratio: 5/7,
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/lichtenstein/lichtenstein-7.jpg',
     ratio: 5/7,
     alt: title + ' graphics',
@@ -51,7 +51,7 @@ Another interesting challenge was how some of Lichtenstein's most famous sculptu
 
 I'm hoping someday to make it to his exhibit at the Museum of Modern Art in New York City to gain even more inspiration from this art icon.
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/lichtenstein/lichtenstein-2.jpg',
     ratio: 7/5,
     alt: title + ' graphics',

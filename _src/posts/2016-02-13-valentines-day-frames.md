@@ -8,14 +8,14 @@ For the first time a limited number of my custom Valentine's Day frames will be 
 
 The frames will be available for purchase at Lake Champlain Chocolates' Burlington locations.
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 13.3/8.7,
     src: '/assets/posts/2016/valentines-day-frames-1.jpg',
     alt: title + ' graphics'
 } %}
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 7/5,
     src: '/assets/posts/2016/valentines-day-frames-2.jpg',

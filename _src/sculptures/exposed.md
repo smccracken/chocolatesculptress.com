@@ -7,14 +7,14 @@ banner: /exposed/banner.jpg
 
 I was asked to create a chocolate centerpiece for [EXPOSED: The Barnstormers 7th Annual Winter Soirée](https://shelburnemuseum.org/event/exposed-the-barnstormers-7th-annual-winter-soiree/) at the Shelburne Museum. The party celebrated the ["Time Lapse: Contemporary Analog Photography"](https://shelburnemuseum.org/exhibition/time-lapse-contemporary-analog-photography/) exhibit, featuring modern photographers using 19th-century photographic techniques.
 
-{% Figure {
+{% figure {
     ratio: 4/6,
     src: '/assets/sculptures/exposed/exposed-1.jpg',
     alt: title + ' chocolate sculpture',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 6/4,
     src: '/assets/sculptures/exposed/exposed-5.jpg',
     alt: title + ' chocolate sculpture',
@@ -23,14 +23,14 @@ I was asked to create a chocolate centerpiece for [EXPOSED: The Barnstormers 7th
 
 During my research I stumbled upon some old TinTypes and fell in love with the cameras they used to create early photographs. There's just something so lovely about the depth of these cameras and all their tactile buttons and levers.
 
-{% Figure {
+{% figure {
     ratio: 6/4,
     src: '/assets/sculptures/exposed/exposed-3.jpg',
     alt: title + ' chocolate sculpture',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 4/6,
     src: '/assets/sculptures/exposed/exposed-2.jpg',
     alt: title + ' chocolate sculpture',

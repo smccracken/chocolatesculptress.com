@@ -4,7 +4,7 @@ date: 2018-03-23
 tags: [chocolate, sculpture, easter]
 ---
 
-{% Figure {
+{% figure {
           breakout: true,
           src: '/assets/sculptures/hop-to-it-spring/chocolate-frogs-1.jpg',
           alt: title + ' graphics'
@@ -19,28 +19,28 @@ I'm proud of this sculpture which features a couple new techniques.
 The lily pad is made by dipping a balloon in tempered chocolate, letting it dry, and then popping the balloon to release the shape. More details will be coming to the blog soon.
 The water was an exercise in marbling different shades of colored cocoa butter. It's possible I went overboard, but can you blame me? It was so much fun.
 
-{% Figure {
+{% figure {
           breakout: false,
           src: '/assets/sculptures/hop-to-it-spring/chocolate-frogs-2.jpg',
           ratio: 16/24,
           alt: title + ' graphics'
         } %}
 
-{% Figure {
+{% figure {
           breakout: false,
           src: '/assets/sculptures/hop-to-it-spring/chocolate-frogs-5.jpg',
           ratio: 7/5,
           alt: title + ' graphics'
         } %}
 
-{% Figure {
+{% figure {
           breakout: false,
           src: '/assets/sculptures/hop-to-it-spring/chocolate-frogs-4.jpg',
           ratio: 16/24,
           alt: title + ' graphics'
         } %}
 
-{% Figure {
+{% figure {
           breakout: false,
           src: '/assets/sculptures/hop-to-it-spring/chocolate-frogs-3.jpg',
           ratio: 7/5,

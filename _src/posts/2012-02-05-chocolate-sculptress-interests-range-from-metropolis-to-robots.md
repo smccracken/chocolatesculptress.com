@@ -4,7 +4,7 @@ tags: [media, chocolate]
 link: http://www.burlingtonfreepress.com/article/20120205/ARTS04/120203025/Chocolate-sculptress-inspirations-range-from-Metropolis-robots
 ---
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 6.4/4,
     src: '/assets/posts/2012/chocolate-facade.jpg',

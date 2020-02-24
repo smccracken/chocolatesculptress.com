@@ -5,7 +5,7 @@ tags: [chocolate, confection, valentinesday, media]
 
 Strawberries are one of my daughter's favorite fruits. What's not to like? They're beautiful, vibrant, and have a built in handle. But like most things in life, they're even better when dipped in chocolate.
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 9/6,
     src: '/assets/posts/2016/chocolate-strawberry-a-thon-1.jpg',
@@ -14,7 +14,7 @@ Strawberries are one of my daughter's favorite fruits. What's not to like? They'
 
 Leading up to Valentine's Day this year, the team at Lake Champlain Chocolates, including myself, dipped and decorated thousands to get them ready for the holiday. And yes ... I made sure to buy a few for my little girl!
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 9/6,
     src: '/assets/posts/2016/chocolate-strawberry-a-thon-3.jpg',
@@ -33,7 +33,7 @@ We talked about how I might need three things when Valentine's Day is all said a
 
 You can checkout their [post about it on Facebook](https://www.facebook.com/chocolatesculptress/posts/958530477569163).
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 3/4,
     src: '/assets/posts/2016/chocolate-strawberry-a-thon-4.png',

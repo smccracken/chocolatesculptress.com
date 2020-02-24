@@ -4,7 +4,7 @@ date: 2014-09-15
 tags: [chocolate, sculpture, music, celebrity]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/grace-potter/gpn-banner.jpg',
     ratio: 7/5,
@@ -15,7 +15,7 @@ My [husband](http://scottmccracken.net/) and I have always been huge fans of Gra
 
 ## Chocolate Flying "V"
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/grace-potter/gpn-2.jpg',
     ratio: 7/5,
@@ -29,7 +29,7 @@ Back in 2010, Grace Potter teamed up with Lake Champlain Chocolates to create a 
 > _“We may be a rock ‘n roll band, but the Nocturnals and I take an unprecedented interest in all things food! I’ve been a fan of Lake Champlain Chocolates since I was a kid, so to combine forces to create a rock n’ roll chocolate bar is a dream come true!” said Potter._
 > _“The idea behind our pistachio pepper flake blend was to go outside the box and blend our love of spice, dark chocolate and nuts.”_
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/grace-potter/gpn-3.jpg',
     ratio: 5/7,
@@ -45,7 +45,7 @@ Grand Point North is the annual music festival that Grace and the band host on t
 
 So what better way than to celebrate such a great event than with custom chocolate sculptures?
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/grace-potter/gpn-4.jpg',
     ratio: 10/7.1,
     alt: title + ' graphics',
@@ -58,14 +58,14 @@ I hear that the band devoured the sculpture after the show. To me, there's nothi
 
 For 2014, I received a note that Grace had personally requested another chocolate sculpture. Yes! This year I decided to honor the festival itself by recreating the logo in chocolate.  You get the sense that it's something the band is incredibly proud of ... and rightfully so. It must take so much work and dedication to pull off a festival like this, not to mention headline the shows on back to back nights. So if ever need a little sugar boost, they know where to turn.
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/grace-potter/gpn-5.jpg',
     ratio: 1/1.25,
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/grace-potter/gpn-6.jpg',
     ratio: 7/5,
     alt: title + ' graphics',
@@ -74,7 +74,7 @@ For 2014, I received a note that Grace had personally requested another chocolat
 
 I have some great ideas ready for GPN 2015. If Grace and the guys want another sculpture, I'll be ready.
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/grace-potter/gpn-7.jpg',
     ratio: 5/7,
     alt: title + ' graphics',

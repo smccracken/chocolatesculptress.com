@@ -1,9 +1,9 @@
 ---
 title: Celebrate Chocolate Artistry
-tags: [chocolate, demo, event, vermont]
+tags: [chocolate, arthop, event, vermont]
 ---
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 6/4,
     src: '/assets/posts/2014/celebrate-chocolate-artistry.jpg',

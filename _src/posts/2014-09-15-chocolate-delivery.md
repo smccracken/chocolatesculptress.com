@@ -3,7 +3,7 @@ title: A Rock Star's Chocolate Request
 tags: [chocolate, sculpture, event, celebrity]
 ---
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 6/4,
     src: '/assets/posts/2014/rock-star-request-1.jpg',

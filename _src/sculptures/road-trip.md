@@ -5,7 +5,7 @@ date: 2017-09-09
 tags: [chocolate, sculpture, americana, arthop]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-banner.jpg',
@@ -18,14 +18,14 @@ Road trips and chocolate – two beloved American traditions, brought together f
 
 ## The Blue Swallow Hotel
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-1.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 2/3,
     src: '/assets/sculptures/road-trip/roadtrip-2.jpg',
     alt: title + ' graphics',
@@ -36,21 +36,21 @@ Road trips and chocolate – two beloved American traditions, brought together f
 
 For my chocolate demonstration I assembled the Las Vegas inspired chocolate sculpture. It's such an iconic, vintage symbol.
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/road-trip/roadtrip-9.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-10.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-11.jpg',
     alt: title + ' graphics',
@@ -59,21 +59,21 @@ For my chocolate demonstration I assembled the Las Vegas inspired chocolate scul
 
 ## Yellowstone National Park
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/road-trip/roadtrip-3.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-4.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/road-trip/roadtrip-5.jpg',
     alt: title + ' graphics',
@@ -82,21 +82,21 @@ For my chocolate demonstration I assembled the Las Vegas inspired chocolate scul
 
 ## East Coast
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/road-trip/roadtrip-6.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-7.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/road-trip/roadtrip-8.jpg',
     alt: title + ' graphics',

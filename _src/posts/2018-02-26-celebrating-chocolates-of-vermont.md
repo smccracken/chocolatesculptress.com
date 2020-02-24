@@ -10,7 +10,7 @@ The _[Chocolates of Vermont](http://www.lakechamplainchocolates.com/assortments/
 
 This piece is a celebration of that chocolate celebration ... in more chocolate. It's like chocolate inception 😂
 
-{% Figure {
+{% figure {
     ratio: 4/6,
     src: '/assets/posts/2018/celebrate-3.jpg',
     alt: title + ' graphics',

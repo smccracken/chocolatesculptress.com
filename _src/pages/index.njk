@@ -26,7 +26,7 @@ permalink: index.html
     </div>
     <p>The path to becoming a chocolate artist has been <a href="/about/" title="Becoming a Chocolate Sculptress">long and winding</a>, but well worth the journey. I started as a part-time retail employee at <a href="http://www.lakechamplainchocolates.com">Lake Champlain Chocolates</a> nearly two decades ago. Since then I've studied with great chocolatiers, made sculptures for celebrities, and taught a series of chocolate-themed classes.</p>
     <p>Above all else, I hope the sculptures, frames, and other treats I make spark a little joy in your day.</p>
-    {% Quote {
+    {% quote {
         text: "There is nothing better than a friend, unless it is a friend with chocolate.",
         cite: "Linda Grayson"
     } %}
@@ -39,7 +39,7 @@ permalink: index.html
         {% include "components/sculpture-card.njk" %}
     {%- endfor %}
     </div>
-    <div class="u-center u-margin-top-3">{% Link '/sculptures', 'All sculptures' %}</div>
+    <div class="u-center u-margin-top-3">{% link '/sculptures', 'All sculptures' %}</div>
 </section>
 
 <section class="u-linear">
@@ -47,7 +47,7 @@ permalink: index.html
     <a href="/press/" title="Emily McCracken in the news">
         <img src="/assets/img/press-seen-on.jpg" alt="Logos of some of the media companies where Emily has appeared" />
     </a>
-    <div class="u-center u-margin-top-3">{% Link '/press', 'All press' %}</div>
+    <div class="u-center u-margin-top-3">{% link '/press', 'All press' %}</div>
 </section>
 
 <section class="u-linear">
@@ -56,6 +56,6 @@ permalink: index.html
     {% set entries = collections.posts | take(3) %}
     {% include "components/listing.njk" %}
     </ul>
-    <div class="u-center u-margin-top-3">{% Link '/journal', 'Read my chocolate journal' %}</div>
+    <div class="u-center u-margin-top-3">{% link '/journal', 'Read my chocolate journal' %}</div>
 </section>
 {% endblock %}

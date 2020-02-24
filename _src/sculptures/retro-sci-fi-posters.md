@@ -4,7 +4,7 @@ date: 2011-09-02
 tags: [chocolate, sculpture, robots, movies, arthop]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/retro-sci-fi-posters/poster-banner.jpg',
     ratio: 16/9,
@@ -15,14 +15,14 @@ tags: [chocolate, sculpture, robots, movies, arthop]
 
 If you haven't picked up on it yet, I love all things retro. And what's more nostalgic then old movie posters? Especially those with colossal gorillas, crazy space robots and futuristic urban dystopias.
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/retro-sci-fi-posters/inspiration.jpg',
     ratio: 1.2/1,
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/retro-sci-fi-posters/poster-5.jpg',
     ratio: 7/5,
     alt: title + ' graphics',
@@ -33,7 +33,7 @@ The movies I decided to base my sculptures on were:
 
 ### Metropolis (1927)
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/retro-sci-fi-posters/poster-2.jpg',
     ratio: 7/5,
     alt: title + ' graphics',
@@ -44,7 +44,7 @@ Metropolis is set in a futuristic urban dystopia, and follows characters overcom
 
 ### King Kong (1933)
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/retro-sci-fi-posters/poster-3.jpg',
     ratio: 7/5,
     alt: title + ' graphics',
@@ -55,7 +55,7 @@ Everyone knows who King Kong is, but I wonder how many people have watched the o
 
 ### Forbidden Planet (1956)
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/retro-sci-fi-posters/poster-4.jpg',
     ratio: 7/5,
     alt: title + ' graphics',

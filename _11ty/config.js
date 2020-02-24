@@ -1,8 +1,15 @@
 const filters = require('./filters');
-const shortcodes = require('./shortcodes');
 const fyi = require('./shortcodes/fyi.js');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+
+// Load Shortcodes
+const figure = require('./shortcodes/figure.js');
+const link = require('./shortcodes/link.js');
+const note = require('./shortcodes/note.js');
+const pill = require('./shortcodes/pill.js');
+const quote = require('./shortcodes/quote.js');
+const youtube = require('./shortcodes/youtube.js');
 
 module.exports = function(eleventyConfig) {
   // Filters
@@ -10,14 +17,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
-
   // Shortcodes
-  Object.keys(shortcodes).forEach(shortCodeName => {
-    eleventyConfig.addShortcode(shortCodeName, shortcodes[shortCodeName]);
-  });
-
-  // Paired Shortcodes
   eleventyConfig.addPairedShortcode('fyi', fyi);
+  eleventyConfig.addShortcode('figure', figure);
+  eleventyConfig.addShortcode('link', link);
+  eleventyConfig.addShortcode('note', note);
+  eleventyConfig.addShortcode('pill', pill);
+  eleventyConfig.addShortcode('quote', quote);
+  eleventyConfig.addShortcode('youtube', youtube);
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);

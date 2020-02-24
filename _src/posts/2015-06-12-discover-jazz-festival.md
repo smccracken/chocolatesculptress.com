@@ -6,14 +6,14 @@ banner: 2015/jazz-fest-banner.jpg
 
 The Burlington discovered jazz festival is an annual looking to broaden awareness and appreciation of jazz with really amazing performances. It's one of the many reasons I love living in Vermont. To celebrate this year I made jazz inspired chocolate sculpture that will be on display at Lake Champlain Chocolates on Church Street.
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 4/3,
     src: '/assets/posts/2015/jazz-fest-2.jpg',
     alt: title + ' graphics'
 } %}
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 4/3,
     src: '/assets/posts/2015/jazz-fest-1.jpg',

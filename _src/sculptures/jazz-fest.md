@@ -4,7 +4,7 @@ date: 2018-04-19
 tags: [chocolate, centerpiece, sculpture, vermont]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/jazz-fest/jazz-fest-banner.jpg',
     ratio: 16/9,
@@ -15,7 +15,7 @@ tags: [chocolate, centerpiece, sculpture, vermont]
 
 Happy 35th Birthday, Burlington Discover Jazz Festival 🎷🎺🎉
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/jazz-fest/jazz-fest-1.jpg',
     ratio: 5/7,
     alt: title + ' graphics',
@@ -24,7 +24,7 @@ Happy 35th Birthday, Burlington Discover Jazz Festival 🎷🎺🎉
 
 ## 2011 Jazz Fest
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/jazz-fest/jazz-fest-3.jpg',
     ratio: 6.6/10,
     alt: title + ' graphics',
@@ -33,7 +33,7 @@ Happy 35th Birthday, Burlington Discover Jazz Festival 🎷🎺🎉
 
 ## 2006 Jazz Fest
 
-{% Figure {
+{% figure {
     src: '/assets/sculptures/jazz-fest/jazz-fest-2.jpg',
     ratio: 5/7,
     alt: title + ' graphics',

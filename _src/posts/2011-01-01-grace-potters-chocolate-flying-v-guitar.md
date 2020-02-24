@@ -5,7 +5,7 @@ tags: [chocolate, sculpture, celebrity]
 
 I made a chocolate Flying "V" guitar for Grace Potter and the Nocturnals. It's based on the custom guitar that was built for Grace by Gibson -- how amazing is that?
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 4/6,
     src: '/assets/posts/2011/chocolate-flying-v.jpg',

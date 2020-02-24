@@ -4,7 +4,7 @@ date: 2018-02-01
 tags: [chocolate, sculpture, valentinesday]
 ---
 
-{% Figure {
+{% figure {
     breakout: true,
     src: '/assets/sculptures/whale-you-be-mine/vday-whale-5.jpg',
     ratio: 6/4,
@@ -19,7 +19,7 @@ The base, whales, and waves are 100% chocolate and painted with colored cocoa bu
 
 What do you think of "whale you be mine"?
 
-{% Figure {
+{% figure {
     breakout: false,
     src: '/assets/sculptures/whale-you-be-mine/vday-whale-1.jpg',
     ratio: 6/4,
@@ -27,7 +27,7 @@ What do you think of "whale you be mine"?
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     breakout: false,
     src: '/assets/sculptures/whale-you-be-mine/vday-whale-4.jpg',
     ratio: 4/6,
@@ -35,7 +35,7 @@ What do you think of "whale you be mine"?
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     breakout: false,
     src: '/assets/sculptures/whale-you-be-mine/vday-whale-3.jpg',
     ratio: 6/4,
@@ -43,7 +43,7 @@ What do you think of "whale you be mine"?
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     breakout: false,
     src: '/assets/sculptures/whale-you-be-mine/vday-whale-6.jpg',
     ratio: 5/7,

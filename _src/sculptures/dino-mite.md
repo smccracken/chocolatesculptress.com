@@ -9,21 +9,21 @@ banner: /dino-mite/vday-banner.jpg
 
 This sculpture features a cute dinosaur pearched on a tree of hearts. The dinosaur's body was made using shell molding and I just love how it turned out. 
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/dino-mite/vday-4.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 5/7,
     src: '/assets/sculptures/dino-mite/vday-1.jpg',
     alt: title + ' graphics',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/dino-mite/vday-3.jpg',
     alt: title + ' graphics',

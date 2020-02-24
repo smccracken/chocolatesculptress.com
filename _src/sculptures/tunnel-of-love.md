@@ -10,14 +10,14 @@ The _Tunnel of Love_ is one name given to "old mill" or "dark tunnel" rides, a p
 
 Hop a ride. 😘
 
-{% Figure {
+{% figure {
     ratio: 4/6,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-1.jpg',
     alt: title + ' chocolate sculpture',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 2/1.3,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-2.jpg',
     alt: title + ' chocolate sculpture',
@@ -32,14 +32,14 @@ Eventually amusement parks picked up on this and re-branded their tunnel rides a
 
 {% endfyi %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-4.jpg',
     alt: title + ' chocolate sculpture',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 7/5,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-9.jpg',
     alt: title + ' chocolate sculpture',
@@ -50,14 +50,14 @@ While researching I found it interesting that there were basically two versions 
 
 Either way the goal was to get the two occupants to cling to one another.
 
-{% Figure {
+{% figure {
     ratio: 6/4,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-7.jpg',
     alt: title + ' chocolate sculpture',
     lazyload: true
 } %}
 
-{% Figure {
+{% figure {
     ratio: 6/4,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-6.jpg',
     alt: title + ' chocolate sculpture',
@@ -66,7 +66,7 @@ Either way the goal was to get the two occupants to cling to one another.
 
 At their peak there were over 700 of these _dark tunnel_ rides in the USA, but sadly they've mostly disappered now. I bet if they start handing out free chocolate at the beginning of the ride they'll make a comeback!
 
-{% Figure {
+{% figure {
     ratio: 4/6,
     src: '/assets/sculptures/tunnel-of-love/tunnel-of-love-10.jpg',
     alt: title + ' chocolate sculpture',

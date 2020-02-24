@@ -3,7 +3,7 @@ title: Marshmallow Class
 tags: [event, confections, vermont]
 ---
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 6/4,
     src: '/assets/posts/2014/handmade-marshmallows-1.jpg',

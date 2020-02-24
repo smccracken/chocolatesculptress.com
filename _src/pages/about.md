@@ -10,7 +10,7 @@ eleventyNavigation:
 
 I've worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/) for the last 17 years where I focus on retail specialty products, teach chocolate bar classes, and create chocolate sculptures for in our stores. 
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 7.5/10.5,
     src: '/assets/img/emily-mccracken.jpg',
@@ -34,7 +34,7 @@ Over the years I've studied chocolate technique at the New England Culinary Inst
 
 I'll often get asked how I first started working with chocolate. Looking back at the winding path that brought me to this point makes me appreciate the opportunity even more. Especially when you consider it really started with a hazelnut truffle. Let me explain...
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 7.5/7,
     src: '/assets/img/sun-moon-sculpture.jpg',
@@ -62,7 +62,7 @@ As I was paying, the employee behind the counter noticed my stack of resumes and
 
 Working for a chocolate company was fantastic, but there was still something missing. It wasn’t until my boss recognized my 3D art background that things really started to take off. 
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 6/4,
     src: '/assets/img/emily-chocolate-turkey.jpg',
@@ -90,7 +90,7 @@ For 11 years I managed the retail store at Lake Champlain Chocolates while takin
 
 When Lake Champlain Chocolates opened a new restaurant and education center, called South End Kitchen, I transitioned to the role of chocolate instructor. 
 
-{% Figure {
+{% figure {
     breakout: false,
     ratio: 6/4,
     src: '/assets/img/emily-mccracken-demo.jpg',
