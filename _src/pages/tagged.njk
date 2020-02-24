@@ -10,11 +10,17 @@ pagination:
     - tv
 permalink: /tagged/{{ tag }}/index.html
 ---
+{% set layoutStyles = [
+  '/components/entry.css',
+  '/components/listing.css',
+  '/components/pagination.css',
+  '/utilities/eyebrow.css'
+]%}
 {% extends "layouts/base.njk" %}
 
 {% block content %}
 {% set sculptures = collections.taggedSculptures[tag] %}
-<section class="o-content u-margin-bottom-3">
+<section class="o-content u-margin-bottom-3 u-linear">
     <h1>Sculptures Tagged “{{ tag }}”</h1>
     <div class="o-grid" style="--min-column: 250px;">
     {%- for sculpture in sculptures %}
@@ -27,17 +33,12 @@ permalink: /tagged/{{ tag }}/index.html
 </section>
 
 {% set posts = collections.taggedPosts[tag] %}
-{% if posts.length > 0 %}
+{% if posts.length %}
 <section class="o-content">
     <h1>Posts Tagged “{{ tag }}”</h1>
     <ul class="c-listing u-margin-top-2">
-    {% for entry in posts | reverse %}
-    {% if entry.data.type and entry.data.type | includes('post') %}
-      <li class="c-listing__item">
-        <a href="{{ entry.url }}">{{ entry.data.title }}</a>
-      </li>
-    {% endif %}
-    {% endfor %}
+    {% set entries = posts %}
+    {% include "components/listing.njk" %}
     </ul>
 </section>
 {% endif %}
