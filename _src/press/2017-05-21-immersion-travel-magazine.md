@@ -8,9 +8,6 @@ image:
 
 My thanks to Clare Hancock over at Immersion Magazine for coming to Burlington for my chocolate sculpture demonstration.
 
-{% quote {
-    text: "&ldquo;'Oh, yeah!' said Chocolate Sculptress Emily McCracken as she placed a chocolate ribbon around the base of a nearly finished sculpture. At least 50 visitors were hunched in their chairs, their eyes glued to the stage in anticipation of what she would do next. Elaborate finished sculptures stood around the South End Kitchen workshop like delicious paintings at a gallery.&rdquo;",
-    size: "u-font-size-xl"
-} %}
+> &ldquo;'Oh, yeah!' said Chocolate Sculptress Emily McCracken as she placed a chocolate ribbon around the base of a nearly finished sculpture. At least 50 visitors were hunched in their chairs, their eyes glued to the stage in anticipation of what she would do next. Elaborate finished sculptures stood around the South End Kitchen workshop like delicious paintings at a gallery.&rdquo;
 
 Immersion Travel Magazine is a digital, tablet-based publication that showcases great travel destinations and exotic cuisine.
