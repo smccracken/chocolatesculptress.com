@@ -1,7 +1,7 @@
 ---
 title: Penguin Snowball Fight
 date: 2018-11-30
-tags: [chocolate, sculpture, christmas]
+tags: [chocolate, sculpture, xmas]
 ---
 
 {% figure {
