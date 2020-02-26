@@ -12,7 +12,7 @@ eleventyNavigation:
 {% extends 'layouts/page.njk' %}
 
 {% block content %}
-  <header class="u-linear hero">
+  <header class="u-flow hero">
     <h1 class="u-font-size-xl">{{ title | widont }}</h1>
     {{ description | markdownify | safe }}
   </header>

@@ -10,7 +10,7 @@
 
 {% block content %}
   <article class="sculpture">
-    <header class="u-linear u-text-center u-margin-bottom-2">
+    <header class="u-flow u-text-center u-margin-bottom-2">
       <span class="u-eyebrow">Chocolate Sculpture</span>
       <h1 class="u-margin-top-0 u-font-size-xl">{{ title }}</h1>
       {% if link %}
@@ -26,7 +26,7 @@
       {% endif %}
       {% include "components/tags.njk" %}
     </header>
-    <div class="u-linear">
+    <div class="u-flow">
       {{ content | safe }}
 
       {% if tags and tags | includes('arthop') %}

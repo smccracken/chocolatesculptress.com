@@ -1,21 +1,21 @@
-.u-linear + .u-linear {
+.u-flow + .u-flow {
 	margin-top: 3rem;
 }
 
-.u-linear > * + * {
+.u-flow > * + * {
 	margin-top: 1.125rem;
 }
 
-.u-linear > * + h2,
-.u-linear > * + h3,
-.u-linear > * + .c-quote {
+.u-flow > * + h2,
+.u-flow > * + h3,
+.u-flow > * + .c-quote {
 	margin-top: 2rem;
 }
 
-.u-linear > * + .c-pagination {
+.u-flow > * + .c-pagination {
   margin-top: 3rem;
 }
 
-.u-linear > * + blockquote {
+.u-flow > * + blockquote {
 	margin-top: 2rem;
 }

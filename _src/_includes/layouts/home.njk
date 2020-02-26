@@ -1,19 +1,17 @@
 {% set layoutStyles = [
-  'components/card.css'
+  'components/button.css',
+  'components/card.css',
+  'components/hero.css',
+  'components/listing.css',
+  'layouts/home.css'
 ]%}
 {% extends 'layouts/base.njk' %}
 
-{% block header %}
-  <header class="u-linear hero">
-    <h1 class="u-font-size-xl">{{ title }}</h1>
-    {% if summary %}
-      <p class="u-margin-top-05 u-font-size-md">{{ summary | markdownify_inline | safe }}</p>
-    {% elif description %}
-      <p class="u-margin-top-05 u-font-size-md">{{ description | markdownify_inline | safe }}</p>
-    {% endif %}
-  </header>
-{% endblock %}
-
 {% block content %}
-<div class="u-linear">{{ content | safe }}</div>
+<header class="hero u-flow">
+    <h1 class="u-font-size-xl">{{ title | widont }}</h1>
+    {{ description | markdownify | safe }}
+</header>
+
+<div class="u-flow">{{ content | safe }}</div>
 {% endblock %}

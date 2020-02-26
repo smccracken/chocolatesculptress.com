@@ -17,12 +17,12 @@ eleventyNavigation:
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<header class="u-linear hero">
+<header class="u-flow hero">
   <h1>{{ title }}</h1>
   {{ description | markdownify | safe }}
 </header>
 
-<section class="u-linear">
+<section class="u-flow">
   <ul class="c-listing c-listing--lg">
   {% for entry in pagination.items %}
   <li class="c-listing__item">

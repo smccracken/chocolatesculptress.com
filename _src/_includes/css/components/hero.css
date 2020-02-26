@@ -1,3 +1,12 @@
+.hero {
+	position: relative;
+}
+
+.hero > *:not(.hero__decor) {
+	position: relative;
+	z-index: 1;
+}
+
 .hero h1 {
 	position: relative;
 }

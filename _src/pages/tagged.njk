@@ -21,7 +21,7 @@ permalink: /tagged/{{ tag }}/index.html
 
 {% block content %}
 {% set sculptures = collections.taggedSculptures[tag] %}
-<section class="o-content u-margin-bottom-3 u-linear">
+<section class="o-content u-margin-bottom-3 u-flow">
     <h1>Sculptures Tagged “{{ tag }}”</h1>
     <div class="o-grid" style="--min-column: 250px;">
     {%- for sculpture in sculptures %}

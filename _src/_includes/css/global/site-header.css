@@ -1,5 +1,7 @@
 .site-header {
-	margin-bottom: 3rem;
+	margin-bottom: var(--size-400);
+	padding: 1.25rem 0 1rem 0;
+	background: var(--color-main-mid);
 }
 
 .site-header__inner {
@@ -11,25 +13,29 @@
 
 .site-header__branding {
 	display: block;
-	margin-right: 3rem;
-	font-size: 2rem;
+	width: 5rem;
+	height: 5rem;
 	flex-shrink: 0;
-	text-decoration: none;
+	margin-right: var(--size-400);
 	-webkit-transition: 0.2s -webkit-transform;
 	transition: 0.2s -webkit-transform;
 	transition: 0.2s transform;
 	transition: 0.2s transform, 0.2s -webkit-transform;
 }
 
-.site-header__branding:hover {
-	-webkit-transform: rotate(20deg);
-	transform: rotate(20deg);
-}
-
 .site-header__nav {
-	margin: 1rem 0 0 0;
+	margin: 0.25rem 0 0 0;
 }
 
 a[href="#footer-menu"] {
 	display: block;
+}
+
+@media (min-width: 48em) {
+	.site-header {
+		padding: 0;
+	}
+	.site-header__branding {
+		transform: scale(1.15) translateY(1rem);
+	}
 }

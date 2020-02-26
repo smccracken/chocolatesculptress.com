@@ -2,7 +2,7 @@
 
 {% block content %}
 <article{% if articleClass %} class="{{ articleClass }}"{% endif %}>
-  <header class="u-linear hero">
+  <header class="u-flow hero">
     <h1 class="u-font-size-xl">{{ title }}</h1>
     {% if summary %}
       <p class="u-margin-top-05 u-font-size-md">{{ summary | markdownify_inline | safe }}</p>
@@ -10,6 +10,6 @@
       <p class="u-margin-top-05 u-font-size-md">{{ description | markdownify_inline | safe }}</p>
     {% endif %}
   </header>
-  <div class="u-linear">{{ content | safe }}</div>
+  <div class="u-flow">{{ content | safe }}</div>
 </article>
 {% endblock %}

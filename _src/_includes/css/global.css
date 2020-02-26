@@ -20,10 +20,10 @@
 html {
 	-webkit-text-size-adjust: 100%;
 	background-color: var(--color-white);
-	padding: 1rem;
+	padding: 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	html {
 		font-size: 1.125rem;
 	}
@@ -35,7 +35,7 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
-	min-height: calc(100vh - 4vw);
+	min-height: 100vh;
 	font-family: var(--font-family-base);
 	line-height: var(--line-height-loose);
 	text-rendering: optimizeLegibility;
@@ -43,7 +43,6 @@ body {
 	overflow-x: hidden;
 	background-color: var(--color-beige);
 	color: var(--color-text);
-	padding-top: 20px;
 }
 
 main {
@@ -200,7 +199,7 @@ hr {
    * CONTAINER
    */
 
-.o-container {
+[class*='inner'] {
 	width: 100%;
 	max-width: 60.5rem;
 	margin-right: auto;

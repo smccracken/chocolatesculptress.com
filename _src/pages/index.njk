@@ -3,23 +3,11 @@ title: "Hi there, I'm Emily. A chocolate sculptress from Vermont."
 description: "Some say I'm obesses with chocolate. I take it as a compliment. Chocolate is a wonderful, finicky, and delicious medium to sculpt with and there's nothing better than the look on someone's face when they realize [my creations](/sculptures/) are completely edible."
 navtitle: Home
 permalink: index.html
+layout: 'layouts/home.njk'
 ---
-{% set layoutStyles = [
-    '/components/avatar.css',
-    '/components/card.css',
-    '/components/entry.css',
-    '/components/listing.css',
-    '/utilities/eyebrow.css'
-]%}
-{% extends "layouts/page.njk" %}
 
 {% block content %}
-<header class="u-linear hero">
-    <h1 class="u-font-size-xl">{{ title | widont }}</h1>
-    {{ description | markdownify | safe }}
-</header>
-
-<section class="intro u-linear">
+<section class="intro u-flow">
     <h2>Finding My Way to Chocolate</h2>
     <div class="c-avatar" style="--aspect-ratio: 1/1;">
       <img src="/assets/img/photo-500.jpg" alt="A collage of Emily on a TV set and sculpting chocolate">
@@ -32,7 +20,7 @@ permalink: index.html
     } %}
 </section>
 
-<section class="u-linear">
+<section class="u-flow">
     <h2>Featured Sculptures</h2>
     <div class="o-grid">
     {%- for sculpture in collections.sculptures | favorites(3) %}
@@ -42,7 +30,7 @@ permalink: index.html
     <div class="u-center u-margin-top-3">{% link '/sculptures', 'All sculptures' %}</div>
 </section>
 
-<section class="u-linear">
+<section class="u-flow">
     <h2>In the Press</h2>
     <a href="/press/" title="Emily McCracken in the news">
         <img src="/assets/img/press-seen-on.jpg" alt="Logos of some of the media companies where Emily has appeared" />
@@ -50,7 +38,7 @@ permalink: index.html
     <div class="u-center u-margin-top-3">{% link '/press', 'All press' %}</div>
 </section>
 
-<section class="u-linear">
+<section class="u-flow">
     <h2>Recent Posts</h2>
     <ul class="c-listing">
     {% set entries = collections.posts | take(3) %}
