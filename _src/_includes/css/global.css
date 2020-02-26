@@ -79,7 +79,6 @@ ul:not([class]) {
 }
 
 a:not([class]) {
-	color: var(--color-red-dark);
 	-webkit-text-decoration-skip-ink: unset;
 	text-decoration-skip-ink: unset;
 	-webkit-text-decoration-style: wavy;
@@ -88,16 +87,20 @@ a:not([class]) {
 	transition: 0.1s ease-in, box-shadow 0.1s ease-in;
 }
 
-a:not([class]):hover,
-a:not([class]):focus {
-	color: var(--color-subtext);
-	-webkit-text-decoration-color: var(--color-subtext);
-	text-decoration-color: var(--color-subtext);
-}
-
 a:focus {
 	outline: var(--outline);
 	outline-offset: 0;
+}
+
+main a {
+	color: var(--color-red-dark);
+}
+
+main a:hover
+main a:focus {
+	color: var(--color-subtext);
+	-webkit-text-decoration-color: var(--color-subtext);
+	text-decoration-color: var(--color-subtext);
 }
 
 blockquote {

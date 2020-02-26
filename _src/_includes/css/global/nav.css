@@ -10,23 +10,8 @@
 }
 
 .nav__list a {
-	color: var(--color-red-dark);
-	position: relative;
-	display: block;
-	font-weight: bold;
-	-webkit-text-decoration-skip-ink: unset;
-	text-decoration-skip-ink: unset;
-	-webkit-text-decoration-style: wavy;
-	text-decoration-style: wavy;
-	-webkit-transition: 0.1s ease-in, box-shadow 0.1s ease-in;
-	transition: 0.1s ease-in, box-shadow 0.1s ease-in;
 	font-size: 110%;
 }
-
-.nav__list a:hover {
-	color: var(--color-primary);
-}
-
 
 @media (min-width: 768px) {
 	a[href="#footer-menu"] {
