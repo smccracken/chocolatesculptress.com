@@ -62,6 +62,11 @@ module.exports = {
     return DateTime.fromJSDate(date).toFormat('yyyy');
   },
 
+  date_to_lastmod: obj => {
+    const date = parseDate(obj);
+    return DateTime.fromJSDate(date).toFormat('yyyy-MM-dd');
+  },
+
   date_formatted: obj => {
     const date = parseDate(obj);
     return DateTime.fromJSDate(date).toFormat('DD');

@@ -90,6 +90,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig
     .addPassthroughCopy('_src/assets')
     .addPassthroughCopy('_src/manifest.json')
+    .addPassthroughCopy('_src/robots.txt')
     .addPassthroughCopy('_src/_redirects');
 
   // Setup
