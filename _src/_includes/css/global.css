@@ -138,7 +138,6 @@ blockquote p:not([class]) {
 
 figcaption {
 	margin-top: 1rem;
-	color: var(--color-gray-500);
 	font-size: smaller;
 }
 
