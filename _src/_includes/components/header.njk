@@ -1,13 +1,15 @@
-<header class="c-header" role="banner">
-  <a class="c-header__branding" href="/">🍫</a>
-  {% set navPages = collections.all | eleventyNavigation %}
-  <nav class="c-header__nav">
-    <ul class="c-header__nav-list">
-      {%- for entry in navPages %}
-      <li class="c-header__nav-item{% if entry.url == page.url %} c-header__nav-active{% endif %}">
-        <a class="c-header__nav-anchor" href="{{ entry.url | url }}">{{ entry.title }}</a>
-      </li>
-      {%- endfor %}
-    </ul>
-  </nav>
+{%- set navPages = collections.all | eleventyNavigation %}
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    <a class="site-header__branding" href="/" aria-label="{{ site.name }} - Home">🍫</a>
+    <nav class="site-header__nav">
+      <ul class="site-header__nav-list">
+        {%- for entry in navPages %}
+        <li class="site-header__nav-item{% if entry.url == page.url %} site-header__nav-active{% endif %}">
+          <a class="site-header__nav-anchor" href="{{ entry.url | url }}">{{ entry.title }}</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
 </header>

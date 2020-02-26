@@ -14,7 +14,7 @@ permalink: index.html
 {% extends "layouts/page.njk" %}
 
 {% block content %}
-<header class="u-linear c-header">
+<header class="u-linear hero">
     <h1 class="u-font-size-xl">{{ title | widont }}</h1>
     {{ description | markdownify | safe }}
 </header>

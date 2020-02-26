@@ -1,0 +1,22 @@
+.hero h1 {
+	position: relative;
+}
+
+.hero h1::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -23px;
+	height: 3px;
+	background: var(--color-subtext);
+	width: 50px;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.hero h1 + p {
+	max-width: 70ch;
+	margin-top: 3rem;
+	font-size: 115%;
+	line-height: 1.65;
+}
