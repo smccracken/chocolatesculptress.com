@@ -201,7 +201,7 @@ hr {
    * CONTAINER
    */
 
-[class*='inner'] {
+[class*='__inner'] {
 	width: 100%;
 	max-width: 60.5rem;
 	margin-right: auto;

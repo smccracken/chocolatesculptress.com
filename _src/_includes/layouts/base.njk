@@ -45,12 +45,12 @@
 </head>
 <body>
   <a href="#main" class="c-skip">Skip to main content</a>
-  {% include "components/header.njk" %}
+  {% include "components/site-header.njk" %}
   <main id="main">
     <div class="main__inner u-flow pad-top-600">
     {% block content %}{% endblock %}
     </div>
   </main>
-  {% include "components/footer.njk" %}
+  {% include "components/site-footer.njk" %}
 </body>
 </html>
