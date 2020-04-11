@@ -5,7 +5,7 @@
 	--font-family-slab: "Bitter", Georgia, sans-serif;
 	--color-beige: #fff9eb;
 	--color-beige-dark: #f5eddc;
-	--color-red: #ff5f2d;
+	--color-red: #685c59;
 	--color-red-dark: #c24924;
 	--color-maroon: #580c0d;
 	--color-maroon-muted: #6e4d4e;
@@ -22,9 +22,10 @@
 
 	--color-main: var(--color-beige);
 	--color-main-mid: var(--color-beige-dark);
+	--color-secondary: #c24924;
 	--color-tertiary: var(--color-yellow);
 	--color-subtext: var(--color-red);
-	--color-text: var(--color-maroon);
+	--color-text: #580c0d;
 	--color-highlight: #fffeca;
 	--color-primary: var(--color-purple);
 
@@ -64,7 +65,7 @@
 }
 
 .u-font-size-xl {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	line-height: var(--line-height-strict);
 }
 

@@ -1,5 +1,6 @@
 node_modules
 dist
+stash
 .vscode
 package-lock.json
 *.sketch

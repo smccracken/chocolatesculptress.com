@@ -1,9 +1,9 @@
 {% set coreStyles = [
   'tokens.css',
-  'global.css',
+  'base.css',
   'global/site-header.css',
   'global/site-footer.css',
-  'global/nav.css',
+  'global/navigation.css',
   'components/button.css',
   'components/skip.css',
   'utilities/eyebrow.css',
@@ -52,5 +52,8 @@
     </div>
   </main>
   {% include "components/site-footer.njk" %}
+  <div id="wayfinding" class="visually-hidden">
+	  <span id="current-page">Current page</span>
+	</div>
 </body>
 </html>
