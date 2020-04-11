@@ -15,6 +15,7 @@ I've worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/)
     ratio: 7.5/10.5,
     src: '/assets/img/emily-mccracken.jpg',
     alt: 'Emily McCracken holding her valentine\'s day chocolate sculpture in front of a pink wall',
+    caption: 'Emily with her Sailor Jerry Valentine Sculpture',
     figclass: 'push'
 } %}
 
@@ -39,6 +40,7 @@ I'll often get asked how I first started working with chocolate. Looking back at
     ratio: 7.5/7,
     src: '/assets/img/sun-moon-sculpture.jpg',
     alt: 'A clay sculpture showing a sun tucking the moon into bed',
+    caption: 'A sample 3D illustration assignment from a class at Montserrat College',
     figclass: 'pull'
 } %}
 
@@ -67,6 +69,7 @@ Working for a chocolate company was fantastic, but there was still something mis
     ratio: 6/4,
     src: '/assets/img/emily-chocolate-turkey.jpg',
     alt: 'Emily McCracken in the factory working on a 3D chocolate turkey',
+    caption: 'Attaching chocolate curl feathers to a Thanksgiving turkey sculpture',
     figclass: 'push-wide'
 } %}
 
@@ -94,7 +97,8 @@ When Lake Champlain Chocolates opened a new restaurant and education center, cal
     breakout: false,
     ratio: 6/4,
     src: '/assets/img/emily-mccracken-demo.jpg',
-    alt: 'Emily McCracken in the factory working on a 3D chocolate turkey',
+    alt: 'Emily holding a chocolate turkey during a sculpture demonstration',
+    caption: 'A chocolate sculpture demonstration at South End Kitchen',
     figclass: 'pull'
 } %}
 
