@@ -40,10 +40,8 @@ layout: 'layouts/home.njk'
 
 <section class="u-flow">
     <h2>Recent Posts</h2>
-    <ul class="c-listing">
     {% set entries = collections.posts | take(3) %}
     {% include "components/listing.njk" %}
-    </ul>
     <div class="u-center u-margin-top-3">{% link '/journal', 'Read my chocolate journal' %}</div>
 </section>
 {% endblock %}
