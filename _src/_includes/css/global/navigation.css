@@ -1,17 +1,17 @@
 .main-nav {
-    display: flex;
+	display: flex;
 	flex-flow: column nowrap;
 	flex-direction: row;
-    justify-content: space-around;
+	justify-content: space-around;
 	align-items: center;
 	margin-top: var(--size-600);
 }
 
 .nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    align-content: initial;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	align-content: initial;
 }
 
 .nav__list > * + * {
@@ -19,71 +19,70 @@
 }
 
 .main-nav .nav__item {
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: initial;
+	display: flex;
+	flex: 0 0 auto;
+	justify-content: initial;
 }
 
 .nav__link {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
-    font-weight: bold;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	text-decoration: none;
+	font-weight: bold;
 	transition: color 0.25s ease-in-out, padding-bottom 0.25s ease-in-out;
-	color: var(--color-beige);
+	color: var(--color-base);
 }
 
 .nav__link::before,
 .nav__link::after {
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: -1;
 }
 
 .nav__link::after {
-    bottom: -4px;
-    height: 3px;
-    opacity: 0.4;
-    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-    transition: background-color 0.15s, clip-path 0.35s ease-in-out;
-    background-color: var(--color-secondary);
+	bottom: -4px;
+	height: 3px;
+	opacity: 0.4;
+	clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+	transition: background-color 0.15s, clip-path 0.35s ease-in-out;
+	background-color: var(--color-secondary);
 }
 
 .nav__link:hover,
 .nav__link[aria-current] {
-    padding-bottom: 0.5rem;
+	padding-bottom: 0.25rem;
 }
 
 .nav__link[aria-current] {
-    color: var(--color-white);
-    font-weight: 700;
-    letter-spacing: 0.05em;
+	color: var(--color-white);
+	font-weight: 700;
 }
 
 .nav__link:focus::after,
 .nav__link:hover::after {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .nav__link[aria-current]::after {
-    background-color: var(--color-secondary);
-    opacity: 1;
-    clip-path: initial;
+	background-color: var(--color-secondary);
+	opacity: 1;
+	clip-path: initial;
 }
 
 @media (min-width: 30em) {
-    .main-nav {
-        margin-top: 0;
-    }
+	.main-nav {
+		margin-top: 0;
+	}
 
-    .main-nav .nav__list {
-        flex-direction: row;
-    }
+	.main-nav .nav__list {
+		flex-direction: row;
+	}
 
-    .nav__list > * + * {
-        margin-left: 2rem;
-    }
+	.nav__list > * + * {
+		margin-left: 2rem;
+	}
 }

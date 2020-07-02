@@ -13,7 +13,7 @@
 	margin-right: 0.5rem;
 	margin-bottom: 0.5rem;
 }
- 
+
 .c-pill {
 	padding: 0.25rem 0.75rem;
 	border-radius: 1rem;
@@ -27,5 +27,5 @@
 
 a.c-pill:hover {
 	background-color: var(--color-subtext);
-	color: var(--color-beige);
+	color: var(--color-base);
 }

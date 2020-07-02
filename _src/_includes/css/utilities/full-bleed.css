@@ -14,7 +14,7 @@
 	margin-bottom: 3rem;
 	margin-left: 50%;
 	transform: translateX(-50%);
-	background-color: var(--color-beige-dark);
+	background-color: var(--color-base-dark);
 	border-color: var(--color-gray-400);
 	border-style: solid;
 	border-width: 1px 0;
