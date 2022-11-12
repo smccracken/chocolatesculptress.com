@@ -17,7 +17,7 @@ module.exports = (content, icon = 'fyi') => {
 <div class="u-full-bleed__icon" aria-hidden="true">
 ${iconContent}
 </div>
-<div class="u-full-bleed__content u-linear">${markdown.render(content)}</div>
+<div class="u-full-bleed__content u-linear u-flow">${markdown.render(content)}</div>
 </div>
 </aside>
     `;
