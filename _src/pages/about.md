@@ -1,14 +1,14 @@
 ---
 layout: layouts/article.njk
-title: The Path to Becoming a Chocolate Sculptress
-summary: Hi there, my name is Emily and I've been interested in 3D illustration for as long as I can remember. Only trouble was I was never sure where that love would take me. How lucky am I that it brought me to chocolate? 
+title: How I Became a Chocolate Sculptress
+summary: I recently went back to school to earn my teaching license for K-12 art education. My art teachers always had a profound impact on me and their guideance is what eventually led me to be able to make art out of chocolate. Now I'm hoping I can help kids find their creative spark.
 permalink: /about/
 eleventyNavigation:
   key: About
   order: 3
 ---
 
-I've worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/) for the last 17 years where I focus on retail specialty products, teach chocolate bar classes, and create chocolate sculptures for in our stores. 
+
 
 {% figure {
     breakout: false,
@@ -19,9 +19,13 @@ I've worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/)
     figclass: 'push'
 } %}
 
+As I shift focus professionally **I am&#8211;at least for now&#8211;no longer making chocolate sculptures**. It was a difficult decision, to say the least, but I'm excited for the future.
+
+Previously I worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/) for nearly 20 years where I focused on retail specialty products, taught chocolate bar classes, and created chocolate sculptures for their stores.
+
 Over the years I've studied chocolate technique at the New England Culinary Institute, the Notter School of Pastry Arts, and the Barry Callebaut Chocolate Academy.
 
-**Some career highlights include:**
+**Some chocolate career highlights:**
 
 * Having a sculpture on display as part of the [_Sweet Tooth: The Art of Dessert_](https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/) exhibit at Shelburne Museum.
 * Being featured on Food Network's [Outrageous Chocolate](https://www.foodnetwork.com/shows/outrageous/episodes/chocolate) special.
@@ -48,7 +52,7 @@ I'll often get asked how I first started working with chocolate. Looking back at
 
 I majored in Illustration at [Montserrat College of Art](http://montserrat.edu/) but quickly discovered that my 2D work just wasn't where my heart was. And, if you ask my teachers, it wasn't where my skill-set was either.
 
-On one illustration assignment I decided to take a chance by sculpting it out of clay. I was so much happier with the result but completely terrified to present it to the class since it was unlike anything else. Would I even get a grade? 
+On one illustration assignment I decided to take a chance by sculpting it out of clay. I was so much happier with the result but completely terrified to present it to the class since it was unlike anything else. Would I even get a grade?
 
 To my surprise, the professor recognized that it was my best work and insisted that from that day on that I work exclusively with clay. In a class full of illustrators and painters, I was the one with messy hands in the corner making clay sculptures.
 
@@ -62,7 +66,7 @@ As I was paying, the employee behind the counter noticed my stack of resumes and
 
 ### Discovering Chocolate
 
-Working for a chocolate company was fantastic, but there was still something missing. It wasn’t until my boss recognized my 3D art background that things really started to take off. 
+Working for a chocolate company was fantastic, but there was still something missing. It wasn’t until my boss recognized my 3D art background that things really started to take off.
 
 {% figure {
     breakout: false,
@@ -75,7 +79,7 @@ Working for a chocolate company was fantastic, but there was still something mis
 
 He wondered if I could replace clay with chocolate?
 
-The company sent me to multiple chocolate classes to put my skills to the test. It was messy (in the best of ways), difficult at times but I was instantly hooked. I had found my passion -- **I wanted to be a chocolate sculptress**. 
+The company sent me to multiple chocolate classes to put my skills to the test. It was messy (in the best of ways), difficult at times but I was instantly hooked. I had found my passion -- **I wanted to be a chocolate sculptress**.
 
 I set a goal of one day getting [one of my sculptures onto the Food Network](/journal/2015/02/a-dream-come-true/).
 
@@ -83,15 +87,15 @@ I set a goal of one day getting [one of my sculptures onto the Food Network](/jo
 
 For 11 years I managed the retail store at Lake Champlain Chocolates while taking any opportunity available to sculpt with, learn about or teach all things chocolate.
 
-* I made store displays and promotional items for local businesses 
+* I made store displays and promotional items for local businesses
 * I create an annual display of sculptures for our local arts festival called the Art Hop.
 * I studied the technique of competitors on Food Network’s chocolate challenges and shows like Sweet Genius.
-* I read up on the characteristics of chocolate and continued to learn by taking classes at schools like the Barry-Callebaut Chocolate Academy. 
+* I read up on the characteristics of chocolate and continued to learn by taking classes at schools like the Barry-Callebaut Chocolate Academy.
 * I jumped at opportunities to teach sessions at the Vermont Chocolate Show and go on news segments with local TV channels.
 
 ### Teaching Chocolate Classes
 
-When Lake Champlain Chocolates opened a new restaurant and education center, called South End Kitchen, I transitioned to the role of chocolate instructor. 
+When Lake Champlain Chocolates opened a new restaurant and education center, called South End Kitchen, I transitioned to the role of chocolate instructor.
 
 {% figure {
     breakout: false,
