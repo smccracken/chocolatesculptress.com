@@ -25,13 +25,13 @@ Previously I worked for [Lake Champlain Chocolates](http://www.lakechamplainchoc
 
 Over the years I've studied chocolate technique at the New England Culinary Institute, the Notter School of Pastry Arts, and the Barry Callebaut Chocolate Academy.
 
-**Some chocolate career highlights:**
+**My chocolate career highlights:**
 
-* Having a sculpture on display as part of the [_Sweet Tooth: The Art of Dessert_](https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/) exhibit at Shelburne Museum.
-* Being featured on Food Network's [Outrageous Chocolate](https://www.foodnetwork.com/shows/outrageous/episodes/chocolate) special.
-* Making sculptures for [Wynton Marsalis](/posts/2010/chocolate-trumpet-for-wyton-marsalis/), [Ben and Jerry](/posts/2011/ben-jerry-chocolate-portraits/), [Grace Potter](/posts/2012/grand-point-north-review/), and [Dr. Oz](/posts/2012/dr-oz-chocolate-sculptures/).
-* Presenting at the Vermont Chocolate Show.
-* Being selected for part of Mastercard's priceless picks campaign.
+* A sculpture on display for [_Sweet Tooth: The Art of Dessert_](https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/) exhibit at Shelburne Museum.
+* Featured on Food Network's [Outrageous Chocolate](https://www.foodnetwork.com/shows/outrageous/episodes/chocolate) special.
+* Custom sculptures for [Wynton Marsalis](/posts/2010/chocolate-trumpet-for-wyton-marsalis/), [Ben &amp; Jerry](/posts/2011/ben-jerry-chocolate-portraits/), and [Grace Potter](/posts/2012/grand-point-north-review/).
+* Vermont Chocolate Show presentation.
+* Mastercard's priceless picks campaign selection.
 
 ---
 
@@ -106,8 +106,6 @@ When Lake Champlain Chocolates opened a new restaurant and education center, cal
     figclass: 'pull'
 } %}
 
-The chocolate classes were a hit, particularly _Make Your Own Chocolate Bar_. While teaching I used the opportunity to further my research into working with chocolate and gained so much experience in the process.
-
-While South End Kitchen has since closed, we are working on bringing chocolate classes back to Lake Champlain Chocolates.
+The chocolate classes were a hit, particularly _Make Your Own Chocolate Bar_. While teaching I used the opportunity to further my research into working with chocolate and gained so much experience until South End kitchen closed in 2015.
 
 Whatever the opportunity, one thing remains – **I love working with chocolate.**
