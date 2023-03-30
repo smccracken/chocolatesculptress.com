@@ -79,10 +79,16 @@ ul:not([class]) {
 a:not([class]) {
 	-webkit-text-decoration-skip-ink: unset;
 	text-decoration-skip-ink: unset;
-	-webkit-text-decoration-style: wavy;
-	text-decoration-style: wavy;
 	-webkit-transition: 0.1s ease-in, box-shadow 0.1s ease-in;
 	transition: 0.1s ease-in, box-shadow 0.1s ease-in;
+  color: currentColor;
+  text-decoration-color: var(--color-red-dark);
+  text-decoration-thickness: 0.3ex;
+  text-underline-offset: 0.3ex;
+}
+
+a:not([class]):hover {
+	opacity: 0.85;
 }
 
 a:focus {
