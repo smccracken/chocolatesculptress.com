@@ -1,7 +1,7 @@
 ---
 layout: layouts/article.njk
-title: How I Became a Chocolate Sculptress
-summary: I recently went back to school to earn my teaching license for K-12 art education. My art teachers always had a profound impact on me and their guideance is what eventually led me to be able to make art out of chocolate. Now I'm hoping I can help kids find their creative spark.
+title: Becoming a Chocolate Sculptress
+summary: I recently [went back to school](https://www.emilymccracken.com "Emily McCracken Artist Website") to earn my teaching license for K-12 art education. My art teachers always had a profound impact on me and their guideance is what eventually led me to be able to make art out of chocolate. Now I'm hoping I can help kids find their creative spark.
 permalink: /about/
 eleventyNavigation:
   key: About
@@ -19,9 +19,9 @@ eleventyNavigation:
     figclass: 'push'
 } %}
 
-As I shift focus professionally **I am&#8211;at least for now&#8211;no longer making chocolate sculptures**. It was a difficult decision, to say the least, but I'm excited for the future.
+As I shift focus professionally **I am&#8211;at least for now&#8211;no longer making chocolate sculptures**. It was a difficult decision, to say the least, but I'm excited for the future. Follow along over on my [personal website](https://emilymccracken.com "My personal website") if you're interested in where I land next.
 
-Previously I worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/) for nearly 20 years where I focused on retail specialty products, taught chocolate bar classes, and created chocolate sculptures for their stores.
+Previously I worked for [Lake Champlain Chocolates](http://www.lakechamplainchocolates/) for 20 years where I focused on retail specialty products, taught chocolate bar classes, and created chocolate sculptures for their stores.
 
 Over the years I've studied chocolate technique at the New England Culinary Institute, the Notter School of Pastry Arts, and the Barry Callebaut Chocolate Academy.
 
