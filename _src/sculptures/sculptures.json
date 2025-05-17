@@ -1,5 +1,0 @@
-{
-    "layout": "layouts/sculpture",
-    "permalink": "sculptures/{{ page.fileSlug }}/",
-    "type": "sculpture"
-}

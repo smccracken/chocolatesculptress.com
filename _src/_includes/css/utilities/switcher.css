@@ -1,8 +1,0 @@
-.switcher > * {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.switcher > * > * {
-    flex-grow: 1;
-}

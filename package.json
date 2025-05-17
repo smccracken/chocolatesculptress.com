@@ -1,37 +1,14 @@
 {
-  "name": "chocolatesculptress",
-  "version": "1.0.0",
-  "description": "Chocolate artist, instructor, and enthusiast from Vermont.",
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "npx eleventy --config=_11ty/config.js",
-    "start": "npx eleventy --config=_11ty/config.js --serve --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:smccracken/chocolatesculptress.git"
-  },
-  "author": {
-    "name": "Scott McCracken",
-    "email": "scottmccracken@gmail.com",
-    "url": "https://scottmccracken.net"
-  },
-  "license": "MIT",
-  "homepage": "https://chocolatesculptress.com",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-navigation": "^0.1.4",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "clean-css": "^4.1.11",
-    "common-tags": "^1.8.0",
-    "html-minifier": "^3.5.19",
-    "luxon": "^1.3.1",
-    "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.0.2",
-    "ramda": "^0.26.1",
-    "terser": "^4.4.3"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "moment": "^2.24.0",
-    "uglifycss": "0.0.29"
+    "astro": "^5.7.13"
   }
 }

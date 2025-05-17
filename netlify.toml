@@ -1,3 +1,0 @@
-[build]
-  publish = "dist"
-  command = "eleventy --config=_11ty/config.js"
