@@ -1,11 +1,13 @@
 ---
 import logo from "../assets/logo.svg";
 import background from "../assets/background.svg";
+import Sparkle from "./Sparkle.astro";
 ---
 
 <div id="container">
     <img id="background" src={background.src} alt="" fetchpriority="high" />
     <main>
+        <Sparkle />
         <section id="hero">
             <a href="/"
                 ><img
@@ -26,10 +28,11 @@ import background from "../assets/background.svg";
             </p>
             <p>
                 The path to becoming a chocolate artist was an incredible
-                journey, but I've recently changed careers. I'll <span
-                    aria-hidden="true">✨</span
-                >always<span aria-hidden="true">✨</span> have a sweet spot for chocolate
-                and am proud of the sculptures I've made.
+                journey, but I've recently changed careers. I'll <Sparkle
+                    title="always"
+                    icon="✨"
+                /> have a sweet spot for chocolate and am proud of the sculptures
+                I've made.
             </p>
             <p>What am I up to now?</p>
             <ul>
@@ -79,15 +82,6 @@ import background from "../assets/background.svg";
 </div>
 
 <style>
-    /* Register your custom font family and tell the browser where to find it. */
-    @font-face {
-        font-family: "Rubik";
-        src: url("/fonts/Rubik.woff2") format("woff2");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-
     :root {
         --font-sans:
             "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",

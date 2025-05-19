@@ -1,0 +1,9 @@
+---
+const { icon, title = "" } = Astro.props;
+---
+
+<mark>
+    {icon && <span aria-hidden="true">{icon}</span>}
+    {title}
+    {icon && <span aria-hidden="true">{icon}</span>}
+</mark>
