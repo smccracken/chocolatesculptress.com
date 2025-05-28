@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection, getEntry } from "astro:content";
+
+const sculptures = await getCollection("sculptures");
+---
+
+<Layout title="Chocolate Sculptures and Art">
+    <main class="content-grid">
+        <h1>Chocolate Sculptures</h1>
+        <div class="card-grid">
+            {
+                sculptures.map((sculpture) => (
+                    <li>
+                        <a href={`/${sculpture.id}`}>{sculpture.data.title}</a>
+                    </li>
+                ))
+            }
+        </div>
+    </main>
+</Layout>

@@ -1,0 +1,24 @@
+---
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const sculptures = await getCollection("sculptures");
+    return sculptures.map((sculpture) => ({
+        params: { id: sculpture.id },
+        props: sculpture,
+    }));
+    type Props = CollectionEntry<"sculptures">;
+}
+
+const sculpture = Astro.props;
+if (!sculpture) {
+    return Astro.redirect("/404");
+}
+const { Content } = await render(sculpture);
+---
+
+<Layout title={sculpture.data.title}>
+    {sculpture.data.title}
+    <Content />
+</Layout>
