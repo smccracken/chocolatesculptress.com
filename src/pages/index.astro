@@ -1,30 +1,20 @@
 ---
-import Sparkle from "../components/Sparkle.astro";
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import SiteIntro from "../components/SiteIntro.astro";
+import SculptureCards from "../components/SculptureCards.astro";
+import Layout from "../layouts/Home.astro";
+import TopicsList from "../components/TopicsList.astro";
 
-const sculptures = await getCollection("sculptures");
-console.log(sculptures);
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+let allSculptures = await getCollection("sculptures");
+allSculptures = allSculptures.slice(0, 10);
 ---
 
 <Layout title="Chocolate Sculptress">
-    <main class="content-grid">
-        <div class="card-grid">
-            <article class="card">
-                <h1>Chocolate Sculptress</h1>
-                <p>Welcome to my website!</p>
-            </article>
-            {
-                sculptures.map((sculpture) => (
-                    <li>
-                        <a href={`/${sculpture.id}`}>{sculpture.data.title}</a>
-                    </li>
-                ))
-            }
-        </div>
-    </main>
+  <div class="wrapper flow">
+    <SculptureCards limit={10} random={true} sculptures={allSculptures}>
+      <SiteIntro slot="intro" />
+      <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
+    </SculptureCards>
+    <TopicsList />
+  </div>
 </Layout>

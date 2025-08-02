@@ -1,24 +1,101 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
-import Layout from "../layouts/Layout.astro";
+import Sculpture from "../layouts/Sculpture.astro";
+import { CldImage } from "astro-cloudinary";
+import { getEntry } from "astro:content";
+import { formatShortDate } from "../js/formatDate";
 
 export async function getStaticPaths() {
-    const sculptures = await getCollection("sculptures");
-    return sculptures.map((sculpture) => ({
-        params: { id: sculpture.id },
-        props: sculpture,
-    }));
-    type Props = CollectionEntry<"sculptures">;
+  const sculptures = await getCollection("sculptures");
+  return sculptures.map((sculpture) => ({
+    params: { id: sculpture.id },
+    props: sculpture,
+  }));
+  type Props = CollectionEntry<"sculptures">;
 }
 
 const sculpture = Astro.props;
 if (!sculpture) {
-    return Astro.redirect("/404");
+  return Astro.redirect("/404");
 }
 const { Content } = await render(sculpture);
+const allImages = await getCollection("sculptureImages");
+const featuredImage = await getEntry("sculptureImages", sculpture.data.thumbnail);
+const images = allImages.filter(
+  (image) =>
+    image.data.context?.custom?.sculptureId === sculpture.id && image.data.public_id !== featuredImage.data.public_id,
+);
 ---
 
-<Layout title={sculpture.data.title}>
-    {sculpture.data.title}
-    <Content />
-</Layout>
+<Sculpture title={sculpture.data.title} sculpture={sculpture.data}>
+  <div class="switcher">
+    <div>
+      <h1 class="headline">
+        {sculpture.data.title}
+      </h1>
+      <ul class="scultpure__meta cluster" role="list">
+        <li>
+          <time datetime={sculpture.data.date}>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              ><path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M8 4h8V2h2v2h1a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V2h2zM5 8v12h14V8zm2 3h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zm0 4h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2H7z"
+              ></path></svg
+            >
+            {formatShortDate(sculpture.data.date)}
+          </time>
+        </li>
+        <li>
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            ><path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M10.525 21.892a4 4 0 0 0-6.77-4.232A9.95 9.95 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10q-.752 0-1.475-.108M9 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4m6 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4m3 5a2 2 0 1 0 0-4a2 2 0 0 0 0 4M6 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4m9 5a2 2 0 1 0 0-4a2 2 0 0 0 0 4"
+            ></path></svg
+          >
+          <a href="https://emilymccracken.com">Emily McCracken</a>
+        </li>
+        <li>
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            ><path
+              fill="currentColor"
+              d="m4.981 14.887l4.132 4.132l9.906-9.906V4.981h-4.132zM13.486 3.58a1.98 1.98 0 0 1 1.4-.58h4.133C20.113 3 21 3.887 21 4.981v4.132c0 .526-.209 1.03-.58 1.401l-9.906 9.906a1.98 1.98 0 0 1-2.802 0L3.58 16.288a1.98 1.98 0 0 1 0-2.802zM16 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2"
+            ></path></svg
+          >
+          {sculpture.data.tags?.map(tag => <a href=`/topics/${tag}` class="tag">{tag}</a>)}
+        </li>
+      </ul>
+      <div class="article__content flow prose">
+          <Content />
+      </div>
+    </div>
+    <div class="sculpture__feature">
+      <CldImage
+        class="radius"
+        src={featuredImage.data.public_id}
+        width={500}
+        height={700}
+        alt=""
+        transition:name={`featured-${sculpture.id}`}
+      />
+    </div>
+  </div>
+
+  <h2>Sculpture Gallery</h2>
+  <div class="grid">
+    {
+      images.map((image) => (
+        <CldImage
+          class="radius"
+          src={image.data.public_id}
+          width={640}
+          height={640}
+          crop="auto"
+          alt={image.data.context?.custom?.alt || `${sculpture.data.title} sculpture`}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+      ))
+    }
+  </div>
+</Sculpture>

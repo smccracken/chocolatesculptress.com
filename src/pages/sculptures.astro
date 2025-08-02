@@ -1,21 +1,16 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import { getCollection, getEntry } from "astro:content";
+import SculptureCards from "../components/SculptureCards.astro";
+import TopicsList from "../components/TopicsList.astro";
 
-const sculptures = await getCollection("sculptures");
+const allSculptures = await getCollection("sculptures");
 ---
 
 <Layout title="Chocolate Sculptures and Art">
-    <main class="content-grid">
-        <h1>Chocolate Sculptures</h1>
-        <div class="card-grid">
-            {
-                sculptures.map((sculpture) => (
-                    <li>
-                        <a href={`/${sculpture.id}`}>{sculpture.data.title}</a>
-                    </li>
-                ))
-            }
-        </div>
-    </main>
+  <div class="wrapper flow">
+    <h1>Chocolate Sculptures</h1>
+    <SculptureCards sculptures={allSculptures} headingLevel={2} />
+    <TopicsList />
+  </div>
 </Layout>

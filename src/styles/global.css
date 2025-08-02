@@ -1,7 +1,0 @@
-@import url("global/tokens.css");
-@import url("global/index.css");
-
-#container {
-    font-family: var(--font-sans);
-    height: 100%;
-}
