@@ -1,0 +1,7 @@
+.bg-light {
+    background-color: var(--color-light);
+}
+
+.bg-light-shade {
+    background-color: var(--color-light-shade);
+}

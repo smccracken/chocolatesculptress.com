@@ -1,0 +1,43 @@
+.reel:focus-visible {
+  outline: 0;
+}
+
+.reel {
+  --reel-calculated-space: var(--reel-space, var(--gutter, 2rem));
+  display: flex;
+  height: auto;
+  margin-inline: auto;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0 0 var(--scroll-bar-offset) 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reel > * {
+  flex-basis: var(--reel-item-width, calc(33.333% - var(--reel-calculated-space)));
+  flex-shrink: 0;
+}
+
+.reel > * + * {
+  margin-inline-start: var(--reel-calculated-space);
+}
+
+.reel::-webkit-scrollbar {
+  block-size: var(--scroll-bar-size);
+}
+
+.reel::-webkit-scrollbar-track {
+  background-color: var(--scroll-bar-track-color);
+}
+
+.reel::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-thumb-color);
+}
+
+.reel[data-scroll="snap"] {
+  scroll-snap-type: x mandatory;
+}
+
+.reel[data-scroll="snap"] > * {
+  scroll-snap-align: start;
+}

@@ -1,0 +1,41 @@
+@keyframes nudge {
+    0% {
+        transform: rotate(1.5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.image-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(var(--card-min-size), 100%), 1fr)
+    );
+}
+
+.sculpture__heading {
+    text-box: trim-both cap alphabetic;
+}
+
+.switcher {
+    container: sculpture-switcher / inline-size;
+}
+
+.sculpture__feature > img {
+    animation: nudge 0.3s ease-in-out forwards;
+    animation-delay: 0.5s;
+    transition: 0.3s ease-in-out;
+    transform: rotate(1.5deg);
+    margin-inline: auto;
+    box-shadow: 15px 15px 0 0px var(--color-secondary);
+}
+
+@container sculpture-switcher (min-width: 40rem) {
+    .sculpture__feature {
+        position: sticky;
+        top: var(--space-l);
+    }
+}

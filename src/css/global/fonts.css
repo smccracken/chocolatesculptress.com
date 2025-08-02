@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Parkly";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url("/fonts/Parkly-Condensed.woff2") format("woff2"),
+        url("/fonts/Parkly-Condensed.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Parkly";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url("/fonts/Parkly-Regular.woff2") format("woff2"),
+        url("/fonts/Parkly-Regular.woff") format("woff");
+}

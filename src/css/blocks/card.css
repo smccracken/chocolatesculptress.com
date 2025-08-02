@@ -1,0 +1,20 @@
+.card {
+    --focus-color: var(--color-primary);
+    --stroke-color: red;
+
+    border: var(--stroke);
+    border-radius: var(--radius-l);
+    padding: var(--space-m);
+    position: relative;
+}
+
+.card__image {
+    display: block;
+    aspect-ratio: 1/1;
+    max-width: 100%;
+    overflow: hidden;
+
+    & img {
+        object-fit: cover;
+    }
+}

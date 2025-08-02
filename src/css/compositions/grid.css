@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  gap: var(--gutter, var(--space-s-l));
+  grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size, 16rem), 1fr));
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.grid[data-layout="artistic"] :nth-child(1) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid[data-layout="halves"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 33rem);
+}
+
+.grid[data-layout="thirds"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+}
+
+.card__intro {
+  padding: 1rem;
+  grid-row: span 2;
+  align-self: start;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  box-shadow: -10px 10px 0 0px var(--color-secondary);
+}

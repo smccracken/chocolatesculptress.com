@@ -1,0 +1,16 @@
+.site-header__grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.site-branding {
+    position: relative;
+    max-width: 10rem;
+
+    & > a {
+        display: block;
+        height: 120px;
+        width: 120px;
+    }
+}
