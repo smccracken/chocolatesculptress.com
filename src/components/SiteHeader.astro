@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../assets/logo.svg";
+---
+
+<header class="site-header">
+  <div class="repel wrapper">
+    <div class="site-branding">
+      <a href="/">
+        <Image src={Logo} width="500" height="500" alt="Chocolate Sculptress Logo" />
+      </a>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul role="list" class="cluster text-base">
+        <li><a href="/sculptures/">Sculptures</a></li>
+        <li><a href="/posts/" title="Posts">Posts</a></li>
+        <li><a href="/about/" title="About Emily">About</a></li>
+        <li><a href="/" class="button">Suprise Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

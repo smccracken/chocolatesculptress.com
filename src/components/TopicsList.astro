@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import "~/css/blocks/topics-list.css";
+
+const allSculptures = await getCollection("sculptures");
+const topics = [...new Set(allSculptures.map((sculpture) => sculpture.data.tags).flat())];
+---
+
+<div class="topics-list region" data-flush="top">
+  <div class="topics-list__container cluster">
+    <h3 class="topics-list__heading">Sort by topic</h3>
+    <nav class="reel" data-wrapper-type="inner" aria-label="Topics">
+      <ul class="cluster" role="list">
+        {
+          topics.map((topic) => (
+            <li>
+              <a href={`/topics/${topic}`}>{topic}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</div>

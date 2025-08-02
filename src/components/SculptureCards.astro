@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import { CldImage } from "astro-cloudinary";
+
+const allSculptures = await getCollection("sculptures");
+
+const { layout = "", headingLevel = 3, sculptures } = Astro.props;
+---
+
+<div class="grid" data-layout={layout}>
+    <slot name="intro" />
+    <slot name="heading" />
+    {sculptures.map((sculpture) => (
+            <article class="card flow radius bg-light-shade">
+                <a
+                    href={`/${sculpture.id}`}
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="card__image radius"
+                    transition:name={`featured-${sculpture.id}`}
+                >
+                    <CldImage
+                        src={sculpture.data.thumbnail}
+                        width={500}
+                        height={500}
+                        alt=""
+                    />
+                </a>
+                <div class="card__content flow">
+                    <h${headingLevel} class="card__heading">{sculpture.data.title}</h${headingLevel}>
+                    <a class="button" href={`/${sculpture.id}`}>
+                        Learn more{" "}
+                        <span class="visually-hidden">
+                            about {sculpture.data.title} sculpture
+                        </span>
+                    </a>
+                </div>
+            </article>
+        ))
+    }
+</div>
