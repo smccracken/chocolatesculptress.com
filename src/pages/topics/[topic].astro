@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import SculptureCards from "../../components/SculptureCards.astro";
+import Layout from "../../layouts/Home.astro";
+import TopicIntro from "../../components/TopicIntro.astro";
+
+export async function getStaticPaths() {
+  const allSculptures = await getCollection("sculptures");
+  const uniqueTags = [...new Set(allSculptures.map((sculpture) => sculpture.data.tags).flat())];
+
+  return uniqueTags.map((topic) => {
+    const filteredPosts = allSculptures.filter((sculpture) => sculpture.data.tags.includes(topic));
+    return {
+      params: { topic },
+      props: { sculptures: filteredPosts },
+    };
+  });
+}
+
+const { topic } = Astro.params;
+const { sculptures } = Astro.props;
+---
+
+<Layout pageTitle={topic}>
+  <div class="wrapper">
+    <SculptureCards sculptures={sculptures}>
+      <TopicIntro topic={topic} slot="intro" />
+      <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
+    </SculptureCards>
+  </div>
+</Layout>

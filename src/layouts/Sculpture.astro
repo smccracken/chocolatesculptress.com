@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../css/sculpture.css";
+const { title = "Chocolate Sculpture" } = Astro.props;
+---
+
+<Layout title={title}>
+  <article class="region wrapper">
+    <slot />
+  </article>
+</Layout>

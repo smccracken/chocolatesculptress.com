@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts");
+const posts = allPosts.slice(0, Infinity);
+---
+
+<Layout title="Chocolate Sculptures and Art">
+  <div class="wrapper">
+    <h1>Posts</h1>
+    <ul class="flow" role="list">
+      {
+        posts.map((post) => (
+          <li>
+            <a href={`/posts/${post.id}`}>{post.data.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>
