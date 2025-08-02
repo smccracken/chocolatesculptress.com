@@ -27,4 +27,6 @@ pnpm-debug.log*
 # Project
 .claude/
 .zed/
+
 CLAUDE.md
+tasks/
