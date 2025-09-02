@@ -1,0 +1,19 @@
+---
+import TagList from "./TagList.astro";
+
+interface Props {
+  title: string;
+  currentTopic?: string;
+  showTagList?: boolean;
+}
+
+const { title, currentTopic, showTagList = false } = Astro.props;
+---
+
+<div class="hero region">
+  <div class="wrapper">
+    <h1>{title}</h1>
+    <slot />
+    {showTagList && <TagList currentTopic={currentTopic} />}
+  </div>
+</div>

@@ -11,7 +11,7 @@ const { layout = "", headingLevel = 3, sculptures } = Astro.props;
     <slot name="intro" />
     <slot name="heading" />
     {sculptures.map((sculpture) => (
-            <article class="card flow radius bg-light-shade">
+            <article class="card radius bg-light-shade">
                 <a
                     href={`/${sculpture.id}`}
                     tabindex="-1"

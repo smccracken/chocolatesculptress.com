@@ -1,54 +1,69 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import emilyPortrait from "../assets/emily-mccracken.jpg";
 ---
 
 <Layout title="About Emily, the Chocolate Sculptress">
-  <article class="wrapper flow" data-wrapper-type="inner">
-    <header class="prose flow">
-      <h1 class="headline">How Do You Even Get Started Sculpting with Chocolate?</h1>
-      <p>
-        Good question! Sometimes I ask myself the same thing. Believe it or not, for me it all began with not fitting in
-        at art school and a hazelnut truffle.
-      </p>
-    </header>
-    <section class="prose flow">
-      <h2>Finding Chocolate</h2>
-      <p>
-        I started my artistic journey at Montserrat College of Art, majoring in Illustration. However, my true passion
-        lay beyond 2D art. During an illustration assignment, I dared to sculpt my project in clay, and to my surprise,
-        my professor encouraged me to embrace this new direction. Suddenly, I was the messy, clay-covered artist in a
-        sea of traditional illustrators, and I loved every moment of it.
-      </p>
+  <article class="wrapper flow switcher" data-wrapper-type="inner">
+    <div class="region">
+      <section class="prose flow">
+        <h1 class="headline">About Emily McCracken</h1>
+        <p>Hi there, I'm Emily 👋🏻 I am a former chocolate artist turned full time elementary art educator!</p>
+        <h2>How do you even get started making chocolate art?</h2>
+        <p>
+          Good question! Sometimes I ask myself the same thing. Believe it or not, for me it all began with not fitting
+          in at art school and a hazelnut truffle.
+        </p>
+        <p>
+          I started my artistic journey at Montserrat College of Art, majoring in Illustration. However, my true passion
+          lay beyond 2D art. During an illustration assignment, I dared to sculpt my project in clay, and to my
+          surprise, my professor encouraged me to embrace this new direction. Suddenly, I was the messy, clay-covered
+          artist in a sea of traditional illustrators, and I loved every moment of it.
+        </p>
 
-      <h3>The Sweet Breakthrough</h3>
-      <p>
-        After graduation, I faced the daunting task of finding work that utilized my sculpting skills. Armed with a
-        stack of resumes, I wandered Church Street in Burlington, Vermont, feeling disheartened. Just when I needed a
-        boost, a hazelnut truffle from Lake Champlain Chocolates caught my eye. The employee suggested I apply for a
-        part-time job, and soon, I was managing the factory store, surrounded by the sweet scent of chocolate.
-      </p>
+        <h3>The Sweet Breakthrough</h3>
+        <p>
+          After graduation, I faced the daunting task of finding work that utilized my sculpting skills. Armed with a
+          stack of resumes, I wandered Church Street in Burlington, Vermont, feeling disheartened. Just when I needed a
+          boost, a hazelnut truffle from Lake Champlain Chocolates caught my eye. The employee suggested I apply for a
+          part-time job, and soon, I was managing the factory store, surrounded by the sweet scent of chocolate.
+        </p>
 
-      <h3>Getting Creative</h3>
-      <p>
-        While managing the store was wonderful, I craved more. My boss saw potential in my 3D art skills and encouraged
-        me to explore chocolate sculpting. After attending several chocolate classes, I was hooked! I realized I wanted
-        to become a chocolate sculptress, with dreams of showcasing my work on the Food Network.
-      </p>
-    </section>
-    <section class="prose flow">
-      <h2>Twenty Years of Working with Chocolate</h2>
-      <p>
-        For 11 years, I honed my craft at Lake Champlain Chocolates, seizing every opportunity to learn and teach about
-        chocolate. I created eye-catching displays, participated in local art festivals, and studied competitors on Food
-        Network shows. My passion flourished as I taught classes and shared my love for chocolate with others.
-      </p>
-      <h3>Career Highlights</h3>
-      <ul>
-        <li>A sculpture featured in the Sweet Tooth: The Art of Dessert exhibit at Shelburne Museum</li>
-        <li>An appearance on Food Network's Outrageous Chocolate special</li>
-        <li>Custom sculptures for renowned figures like Wynton Marsalis and Ben & Jerry</li>
-        <li>Presentations at the Vermont Chocolate Show</li>
-      </ul>
-    </section>
+        <h3>Getting Creative</h3>
+        <p>
+          While managing the store was wonderful, I craved more. My boss saw potential in my 3D art skills and
+          encouraged me to explore chocolate sculpting. After attending several chocolate classes, I was hooked! I
+          realized I wanted to become a chocolate sculptress, with dreams of showcasing my work on the Food Network.
+        </p>
+      </section>
+      <section class="prose flow">
+        <h2>Twenty Years of Working with Chocolate</h2>
+        <p>
+          For 11 years, I honed my craft at Lake Champlain Chocolates, seizing every opportunity to learn and teach
+          about chocolate. I created eye-catching displays, participated in local art festivals, and studied competitors
+          on Food Network shows. My passion flourished as I taught classes and shared my love for chocolate with others.
+        </p>
+        <h3>Career Highlights</h3>
+        <ul>
+          <li>
+            A sculpture featured in the <a href="https://shelburnemuseum.org/exhibition/sweet-tooth-art-dessert/"
+              >Sweet Tooth: The Art of Dessert</a
+            > exhibit at Shelburne Museum
+          </li>
+          <li>
+            An appearance on Food Network's <a href="https://www.foodnetwork.com/shows/outrageous/episodes/chocolate"
+              >Outrageous Chocolate</a
+            > special
+          </li>
+          <li>Custom sculptures for renowned figures like Wynton Marsalis and Ben & Jerry</li>
+          <li>Presentations at the Vermont Chocolate Show</li>
+        </ul>
+      </section>
+    </div>
+    <aside>
+      <Image src={emilyPortrait} height="530" width="473" alt="Emily with one of her Valentine's Day sculptures" />
+    </aside>
   </article>
 </Layout>

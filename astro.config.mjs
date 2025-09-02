@@ -5,6 +5,7 @@ import { resolve } from 'path';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://chocolatesculptress.com',
   integrations: [mdx()],
   vite: {
     resolve: {

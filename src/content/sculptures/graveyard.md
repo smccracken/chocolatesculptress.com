@@ -1,7 +1,7 @@
 ---
 title: Chocolate Graveyard
 date: 2017-10-21
-tags: [holiday, halloween]
+tags: [holiday, fall]
 description: A sculpture that captures the essence of a chocolate phoenix.
 thumbnail: graveyard-1_ablswl
 ---

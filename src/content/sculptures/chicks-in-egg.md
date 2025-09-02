@@ -1,7 +1,7 @@
 ---
 title: Chicks in an Egg
 date: 2016-04-11
-tags: [easter, holiday, birds]
+tags: [spring, holiday, birds]
 description: An Easter sculpture that goes beyond the bunny.
 thumbnail: easter-1_aoglqp
 ---

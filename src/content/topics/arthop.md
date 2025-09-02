@@ -1,7 +1,9 @@
 ---
 title: "Art Hop Sculptures"
-description: "Creative pieces for Burlington's Art Hop events"
+description: "Creative pieces for Burlington Vermont's yearly Art Hop"
 ---
+
+## Get Hoppin'
 
 Burlington, VT, is a vibrant artistic community that inspires creativity at every turn. Each September, the South End Art Hop transforms the south end of the city into a lively celebration of local art. Streets are closed, allowing art lovers to stroll from building to building, admiring the diverse works created by local artists.
 

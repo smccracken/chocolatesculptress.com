@@ -1,16 +1,20 @@
+.site-header {
+  border-bottom: 1px solid var(--stroke-color);
+  background: var(--color-light);
+}
 .site-header__grid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .site-branding {
-    position: relative;
-    max-width: 10rem;
+  position: relative;
+  width: clamp(80px, 5rem, 10rem);
 
-    & > a {
-        display: block;
-        height: 120px;
-        width: 120px;
-    }
+  & > a {
+    display: block;
+    height: 120px;
+    width: 120px;
+  }
 }

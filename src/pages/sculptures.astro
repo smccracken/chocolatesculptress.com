@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import SculptureCards from "../components/SculptureCards.astro";
-import TopicsList from "../components/TopicsList.astro";
+import TagList from "../components/TagList.astro";
 
 const allSculptures = await getCollection("sculptures");
 ---
@@ -11,6 +11,6 @@ const allSculptures = await getCollection("sculptures");
   <div class="wrapper flow">
     <h1>Chocolate Sculptures</h1>
     <SculptureCards sculptures={allSculptures} headingLevel={2} />
-    <TopicsList />
+    <TagList />
   </div>
 </Layout>

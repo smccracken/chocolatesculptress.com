@@ -1,11 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { CldImage } from "astro-cloudinary";
 import "../css/sculpture.css";
-const { title = "Chocolate Sculpture" } = Astro.props;
+const { sculpture, title = "Chocolate Sculpture", images } = Astro.props;
 ---
 
 <Layout title={title}>
   <article class="region wrapper">
     <slot />
   </article>
+  {images &&
+    <h2 class="visually-hidden">Sculpture Gallery</h2>
+    <div class="gallery reel">
+        <ul class="cluster" role="list">
+        {
+        images.map((image) => (
+            <li>
+                <CldImage
+                    src={image.data.public_id}
+                    width={640}
+                    height={640}
+                    crop="auto"
+                    alt={image.data.context?.custom?.alt || `${sculpture.data.title} sculpture`}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+            </li>
+        ))
+        }
+        </ul>
+    </div>
+  }
 </Layout>

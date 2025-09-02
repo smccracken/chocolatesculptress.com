@@ -1,7 +1,7 @@
 ---
 title: Dia de los Chocolate
 date: 2016-09-09
-tags: [arthop, holiday]
+tags: [arthop, holiday, fall]
 description: A celebration of chocolate and Mexican heritage.
 thumbnail: dias-de-chocolate-7_da0f2v
 ---

@@ -1,0 +1,23 @@
+.tag-list__container {
+  max-width: 80ch;
+  margin: var(--space-xl) auto 0;
+}
+
+.tag-list a {
+  border: var(--stroke-weight-light) solid var(--color-dark);
+  font-weight: bold;
+  padding: var(--space-2xs) var(--space-s);
+  text-decoration: none;
+}
+
+.tag-list a[aria-current="page"] {
+  background-color: var(--color-secondary-glare);
+  box-shadow: 3px 3px 0px var(--color-dark);
+}
+
+.tag-list .cluster {
+  --cluster-horizontal-alignment: center;
+  --space: 1.5rem 1rem;
+
+  margin-top: 0;
+}

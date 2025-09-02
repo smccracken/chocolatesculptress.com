@@ -1,31 +1,66 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 import SculptureCards from "../../components/SculptureCards.astro";
 import Layout from "../../layouts/Home.astro";
-import TopicIntro from "../../components/TopicIntro.astro";
+import Hero from "../../components/Hero.astro";
+import PageDetails from "../../components/PageDetails.astro";
 
 export async function getStaticPaths() {
   const allSculptures = await getCollection("sculptures");
   const uniqueTags = [...new Set(allSculptures.map((sculpture) => sculpture.data.tags).flat())];
 
-  return uniqueTags.map((topic) => {
-    const filteredPosts = allSculptures.filter((sculpture) => sculpture.data.tags.includes(topic));
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allSculptures.filter((sculpture) => sculpture.data.tags.includes(tag));
+    // Convert tag to URL-friendly slug (spaces to hyphens)
+    const topicSlug = tag.replace(/\s+/g, "-").toLowerCase();
     return {
-      params: { topic },
-      props: { sculptures: filteredPosts },
+      params: { topic: topicSlug },
+      props: { sculptures: filteredPosts, originalTag: tag },
     };
   });
 }
 
 const { topic } = Astro.params;
-const { sculptures } = Astro.props;
+const { sculptures, originalTag } = Astro.props;
+let topicContent = null;
+let Content = null;
+
+try {
+  // Use the URL slug directly to look up the markdown file
+  // e.g., "valentines-day" URL -> "valentines-day.md" file
+  topicContent = await getEntry("topics", topic);
+
+  if (topicContent) {
+    const rendered = await render(topicContent);
+    Content = rendered.Content;
+  }
+} catch (error) {
+  // Topic content not found, will show fallback
+}
 ---
 
 <Layout pageTitle={topic}>
-  <div class="wrapper">
-    <SculptureCards sculptures={sculptures}>
-      <TopicIntro topic={topic} slot="intro" />
-      <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
-    </SculptureCards>
+  <Hero
+    title={topicContent?.data.title || `${originalTag} Chocolate Sculptures`}
+    currentTopic={originalTag}
+    showTagList={true}
+  >
+    {
+      topicContent?.data.description ? (
+        <p>{topicContent?.data.description}</p>
+      ) : (
+        <p>Explore our collection of {originalTag} themed chocolate sculptures.</p>
+      )
+    }
+  </Hero>
+  <div class="region">
+    <div class="wrapper flow">
+      <SculptureCards sculptures={sculptures}>
+        <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
+      </SculptureCards>
+    </div>
   </div>
+  <PageDetails>
+    {Content ? <Content /> : "About"}
+  </PageDetails>
 </Layout>

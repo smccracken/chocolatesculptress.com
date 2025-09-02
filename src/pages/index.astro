@@ -3,18 +3,34 @@ import { getCollection } from "astro:content";
 import SiteIntro from "../components/SiteIntro.astro";
 import SculptureCards from "../components/SculptureCards.astro";
 import Layout from "../layouts/Home.astro";
-import TopicsList from "../components/TopicsList.astro";
+import Hero from "../components/Hero.astro";
+import PageDetails from "../components/PageDetails.astro";
 
 let allSculptures = await getCollection("sculptures");
-allSculptures = allSculptures.slice(0, 10);
 ---
 
 <Layout title="Chocolate Sculptress">
-  <div class="wrapper flow">
-    <SculptureCards limit={10} random={true} sculptures={allSculptures}>
-      <SiteIntro slot="intro" />
-      <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
-    </SculptureCards>
-    <TopicsList />
+  <Hero title="Chocolate Sculptress" showTagList={true}>
+    <p>A collection of deliciously edible art by <a href="#about">Emily McCracken</a>.</p>
+  </Hero>
+  <div class="region">
+    <div class="wrapper flow">
+      <SculptureCards random={true} sculptures={allSculptures}>
+        <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
+      </SculptureCards>
+    </div>
   </div>
+  <PageDetails>
+    <h2 class="h1">Who Made All These?</h2>
+    <div class="flow">
+      <p>Hi there, I'm <a href="https://emilymccracken.com">Emily</a> 👋🏻</p>
+      <p>
+        I'm an artist in northern Vermont that used to make sculptures and centerpieces out of chocolate. I even got one <a
+          href="/cuckoo-clock/">featured on the Food Network.</a
+        > These days I'm teaching elementary school art.
+      </p>
+      <p>This site is a time capsule of those <em>sweet</em> ole' days.</p>
+      <p><a href="/about/" class="button">Learn more about me</a></p>
+    </div>
+  </PageDetails>
 </Layout>

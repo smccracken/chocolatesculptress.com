@@ -1,7 +1,7 @@
 ---
 title: Sailor Jerry Valentine Sculpture
 date: 2016-02-05
-tags: [valentinesday, holiday, artist]
+tags: [valentines day, holiday, artist]
 description: A sculpture that captures the essence of a chocolate phoenix.
 thumbnail: sailor-jerry-8_j1mlbh
 ---

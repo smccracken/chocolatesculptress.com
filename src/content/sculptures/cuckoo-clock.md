@@ -1,7 +1,7 @@
 ---
 title: Food Network Cuckoo Clock
 date: 2014-12-18
-tags: [birds, event, tv]
+tags: [birds, event]
 description: A sculpture that captures the essence of a chocolate cuckoo clock.
 thumbnail: food-network-banner_zjpwya
 ---

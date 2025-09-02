@@ -5,18 +5,22 @@
 @import url("global/variables.css");
 @import url("compositions/cluster.css");
 @import url("compositions/grid.css");
+@import url("compositions/reel.css");
 @import url("compositions/repel.css");
 @import url("compositions/sidebar.css");
 @import url("compositions/switcher.css");
 @import url("utilities/backgrounds.css");
 @import url("utilities/flow.css");
-@import url("utilities/reel.css");
 @import url("utilities/region.css");
 @import url("utilities/wrapper.css");
 @import url("utilities/visually-hidden.css");
 @import url("blocks/article.css");
+@import url("blocks/page-info.css");
 @import url("blocks/site-header.css");
 @import url("blocks/card.css");
+@import url("blocks/gallery.css");
+@import url("blocks/hero.css");
+@import url("blocks/tag-list.css");
 
 .featured-image {
   position: relative;
@@ -30,4 +34,8 @@
   height: 75%;
   background-color: var(--color-primary);
   z-index: -1;
+}
+
+.mt-0 {
+  margin-top: 0;
 }

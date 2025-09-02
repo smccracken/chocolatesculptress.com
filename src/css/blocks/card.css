@@ -1,20 +1,32 @@
 .card {
-    --focus-color: var(--color-primary);
-    --stroke-color: red;
+  --focus-color: var(--color-primary);
+  --stroke-color: red;
 
-    border: var(--stroke);
-    border-radius: var(--radius-l);
-    padding: var(--space-m);
-    position: relative;
+  border: var(--stroke);
+  border-radius: var(--radius-l);
+  position: relative;
+  max-width: 500px;
+}
+
+.card a {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card__content {
+  padding-block: var(--space-s);
+  padding-inline: var(--space-m);
 }
 
 .card__image {
-    display: block;
-    aspect-ratio: 1/1;
-    max-width: 100%;
-    overflow: hidden;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 
-    & img {
-        object-fit: cover;
-    }
+  & img {
+    object-fit: cover;
+  }
 }

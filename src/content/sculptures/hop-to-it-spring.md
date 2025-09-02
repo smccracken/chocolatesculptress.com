@@ -1,7 +1,7 @@
 ---
 title: Hop to it, Spring!
 date: 2018-03-23
-tags: [holiday, easter]
+tags: [holiday, spring]
 description: A sculpture that captures the essence of a chocolate phoenix.
 thumbnail: chocolate-frogs-2_pt0uks
 ---

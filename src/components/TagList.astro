@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+  currentTopic?: string;
+}
+
+const { currentTopic } = Astro.props;
+const allSculptures = await getCollection("sculptures");
+const topics = [...new Set(allSculptures.map((sculpture) => sculpture.data.tags).flat())];
+
+// Determine if "all" should be active (homepage, sculptures page, or no current topic)
+const isAllActive = !currentTopic || Astro.url.pathname === "/" || Astro.url.pathname === "/sculptures";
+---
+
+<div class="tag-list" data-flush="top">
+  <div class="tag-list__container">
+    <h2 class="tag-list__heading visually-hidden">Filter by topic</h2>
+    <nav data-wrapper-type="inner" aria-label="Topics">
+      <ul class="cluster" role="list">
+        <li>
+          <a href={`/`} class="radius" aria-current={isAllActive ? "page" : undefined}> all </a>
+        </li>
+        {
+          topics.map((topic) => {
+            const topicSlug = topic.replace(/\s+/g, "-").toLowerCase();
+            return (
+              <li>
+                <a
+                  href={`/topics/${topicSlug}`}
+                  class="radius"
+                  aria-current={currentTopic === topic ? "page" : undefined}
+                >
+                  {topic}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+  </div>
+</div>
