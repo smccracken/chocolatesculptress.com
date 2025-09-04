@@ -1,5 +1,5 @@
 ---
-title: Roy Lichtenstein Tribute
+title: Chocolate Roy Lichtenstein Tribute
 date: 2012-09-02
 tags: [artist, arthop]
 description: A sculpture that captures the essence of a chocolate phoenix.

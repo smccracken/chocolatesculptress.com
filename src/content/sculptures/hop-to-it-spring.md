@@ -6,7 +6,7 @@ description: A sculpture that captures the essence of a chocolate phoenix.
 thumbnail: chocolate-frogs-2_pt0uks
 ---
 
-**Anyone else feeling swamped?** 😄
+**Anyone else feeling swamped?** 🐸
 
 I could use a little more sunshine and this spring chocolate sculpture is a celebration of the longer, warmer days ahead. After a long day getting my hands dirty in chocolate, I'm ready to come home and get my hands dirty in the garden. It's a real struggle to keep my fingernails clean.
 

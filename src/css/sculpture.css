@@ -13,6 +13,14 @@
   grid-template-columns: repeat(auto-fit, minmax(min(var(--card-min-size), 100%), 1fr));
 }
 
+.scultpure__meta {
+  --space: 1.5rem;
+
+  .cluster {
+    --space: 0.5rem;
+  }
+}
+
 .sculpture__heading {
   text-box: trim-both cap alphabetic;
 }

@@ -1,5 +1,4 @@
 .article__content {
   --flow-space: var(--space-l-xl);
-  font-size: var(--size-step-0);
-  padding-block: var(--space-l-xl);
+  font-size: var(--size-step-0);    
 }
