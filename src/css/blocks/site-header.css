@@ -1,6 +1,7 @@
 .site-header {
   position: relative;
   border-bottom: 1px solid var(--stroke-color);
+  padding-block: var(--space-s);
   margin-bottom: var(--space-l);
   color: var(--color-light);
 
