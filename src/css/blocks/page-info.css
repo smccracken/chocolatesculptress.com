@@ -51,7 +51,7 @@
   height: 100%;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 960px) {
   .page-info {
     display: grid;
     grid-template-columns: repeat(2, 50vw);
