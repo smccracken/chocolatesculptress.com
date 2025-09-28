@@ -11,7 +11,7 @@ const { sculpture, title = "Chocolate Sculpture", images } = Astro.props;
   </article>
   {images &&
     <h2 class="visually-hidden">Sculpture Gallery</h2>
-    <div class="gallery reel">
+    <div class="gallery reel" tabindex="0">
         <ul class="cluster" role="list">
         {
         images.map((image) => (
