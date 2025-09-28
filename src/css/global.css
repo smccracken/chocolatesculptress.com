@@ -20,6 +20,7 @@
 @import url("blocks/card.css");
 @import url("blocks/gallery.css");
 @import url("blocks/hero.css");
+@import url("blocks/image-stack.css");
 @import url("blocks/tag-list.css");
 
 .featured-image {

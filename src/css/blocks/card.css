@@ -1,11 +1,11 @@
 .card {
   --focus-color: var(--color-primary);
-  --stroke-color: red;
 
   border: var(--stroke);
   border-radius: var(--radius-l);
   position: relative;
   max-width: 500px;
+  overflow: hidden;
 }
 
 .card a {
@@ -28,5 +28,7 @@
 
   & img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }

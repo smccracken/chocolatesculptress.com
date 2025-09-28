@@ -3,10 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 
 import emilyPortrait from "../assets/emily-mccracken.jpg";
+import emilyDemo from "../assets/emily-mccracken-demo.jpg";
+import emilyLocal22 from "../assets/emily-mccracken-local-22.jpg";
 ---
 
 <Layout title="About Emily, the Chocolate Sculptress">
-  <article class="wrapper flow switcher" data-wrapper-type="inner">
+  <article class="wrapper switcher">
     <div class="region">
       <section class="prose flow">
         <h1 class="headline">About Emily McCracken</h1>
@@ -63,7 +65,29 @@ import emilyPortrait from "../assets/emily-mccracken.jpg";
       </section>
     </div>
     <aside>
-      <Image src={emilyPortrait} height="530" width="473" alt="Emily with one of her Valentine's Day sculptures" />
+      <div class="region image-stack">
+        <Image
+          src={emilyDemo}
+          height="543"
+          width="815"
+          alt="Emily with one of her Valentine's Day sculptures"
+          class="radius"
+        />
+        <Image
+          src={emilyPortrait}
+          height="530"
+          width="473"
+          alt="Emily with one of her Valentine's Day sculptures"
+          class="radius"
+        />
+        <Image
+          src={emilyLocal22}
+          height="600"
+          width="800"
+          alt="Emily with one of her Valentine's Day sculptures"
+          class="radius"
+        />
+      </div>
     </aside>
   </article>
 </Layout>
