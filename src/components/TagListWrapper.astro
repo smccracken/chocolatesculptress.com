@@ -1,0 +1,18 @@
+---
+interface Props {
+  wrapper?: boolean;
+}
+
+const { wrapper = true } = Astro.props;
+---
+
+{
+  wrapper ? (
+    <div class="wrapper" data-wrapper-type="inner-skinny" style="--gutter-wrapper-inner-block: 2rem;">
+      <h2 class="tag-list__heading visually-hidden">Filter by topic</h2>
+      <slot />
+    </div>
+  ) : (
+    <slot />
+  )
+}

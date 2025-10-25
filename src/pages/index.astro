@@ -7,6 +7,7 @@ import Hero from "../components/Hero.astro";
 import PageDetails from "../components/PageDetails.astro";
 
 let allSculptures = await getCollection("sculptures");
+const sculptures = allSculptures.slice(0, 8);
 ---
 
 <Layout title="Chocolate Sculptress">
@@ -15,22 +16,10 @@ let allSculptures = await getCollection("sculptures");
   </Hero>
   <div class="region">
     <div class="wrapper flow">
-      <SculptureCards random={true} sculptures={allSculptures}>
+      <SculptureCards random={true} sculptures={sculptures}>
         <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
       </SculptureCards>
     </div>
   </div>
-  <PageDetails>
-    <h2 class="h1">Who Made All These?</h2>
-    <div class="flow">
-      <p>Hi there, I'm <a href="https://emilymccracken.com">Emily</a> 👋🏻</p>
-      <p>
-        I'm an artist in northern Vermont that used to make sculptures and centerpieces out of chocolate. I even got one <a
-          href="/cuckoo-clock/">featured on the Food Network.</a
-        > These days I'm teaching elementary school art.
-      </p>
-      <p>This site is a time capsule of those <em>sweet</em> ole' days.</p>
-      <p><a href="/about/" class="button">Learn more about me</a></p>
-    </div>
-  </PageDetails>
+  <PageDetails />
 </Layout>

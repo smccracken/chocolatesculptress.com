@@ -43,6 +43,7 @@ h3 {
   gap: 1ch;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--color-secondary-shade);
 }
 
 :is(h1, h2, h3) check-mark {

@@ -5,31 +5,29 @@ import iconChocolate from "../assets/icon-chocolate.png";
 import iconEmail from "../assets/icon-email.png";
 import iconMap from "../assets/icon-map.png";
 import iconPainter from "../assets/icon-painter.png";
-import dreamBanner from "../assets/eatxne-caramel-apples-1.jpg";
+import valentine from "../assets/emily-mccracken.jpg";
 import roses from "../assets/roses-4.jpg";
 
 const imageSize = 250;
 const imageFull = 1600;
 ---
 
-<div class="page-info">
-  <div class="info-intro flow">
-    <slot />
+<div class="bg-white grid page-info" data-layout="thirds">
+  <div class="region flow">
+    <h2>Who Made All These?</h2>
+    <p>Hi there, I'm <a href="https://emilymccracken.com">Emily</a> 👋🏻</p>
+    <p>
+      I'm an artist in northern Vermont that used to make sculptures and centerpieces out of chocolate. I even got one <a
+        href="/cuckoo-clock/">featured on the Food Network.</a
+      >
+    </p>
+    <p>This site is a time capsule of those <em>sweet</em> ole' days.</p>
+    <p><a href="/about/" class="button">Learn more about me</a></p>
   </div>
-  <div class="info-blocks">
-    <div class="full">
-      <Image src={dreamBanner} alt="Email" width={imageFull} height={imageFull} />
-    </div>
-    <div>
-      <Image src={iconChocolate} alt="Chocolate bar" width={imageSize} height={imageSize} />
-      <p><strong>100% Edible</strong></p>
-    </div>
-    <div>
-      <Image src={iconMap} alt="Map" width={imageSize} height={imageSize} />
-      <p><strong>Made with ❤️ in Vermont</strong></p>
-    </div>
-    <div class="full">
-      <Image src={roses} alt="Email" width={imageFull} height={imageFull} />
-    </div>
+  <div class="full">
+    <Image src={roses} alt="Email" width={imageFull} height={imageFull} />
+  </div>
+  <div class="full">
+    <Image src={valentine} alt="Email" width={imageFull} height={imageFull} />
   </div>
 </div>

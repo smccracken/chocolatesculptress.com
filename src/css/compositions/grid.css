@@ -23,6 +23,11 @@
   --grid-min-item-size: clamp(16rem, 33%, 20rem);
 }
 
+.grid[data-layout="quarters"] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(10rem, 25%, 15rem);
+}
+
 .card__intro {
   padding: 1rem;
   grid-row: span 2;

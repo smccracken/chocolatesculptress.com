@@ -1,11 +1,13 @@
 :root {
-  --color-dark: oklch(0.4211 0.0974 50.94);
-  --color-light: oklch(0.9679 0.0226 78.22);
+  --color-dark: oklch(30% 0.02 280);
+  --color-light: oklch(0.9232 0.017 56.18);
   --color-light-glare: oklch(0.9838 0.0118 79.79);
   --color-light-shade: oklch(0.9391 0.0334 73.2);
-  --color-primary: oklch(0.6935 0.2023 42.03);
-  --color-secondary: oklch(0.7962 0.1652 71.71);
+  --color-primary: oklch(0.8283 0.0616 13.43);
+  --color-primary-shade: oklch(0.8283 0.1201 13.43);
+  --color-secondary: oklch(0.5529 0.0537 52.99);
   --color-secondary-glare: oklch(0.7962 0.1652 71.71);
+  --color-secondary-shade: oklch(0.3701 0.0141 24.6);
   --color-white: oklch(0.994 0 0);
 }
 
