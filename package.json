@@ -3,12 +3,23 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "astro": "astro",
     "build": "astro build",
+    "dev": "astro dev",
+    "html-validate": "pnpm build && pnpm exec html-validate dist/*.html",
     "preview": "astro preview",
-    "astro": "astro"
+    "stylelint": "stylelint \"src/**/*.{css,astro}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{css,astro}\" --fix"
   },
   "dependencies": {
     "astro": "^5.17.1"
+  },
+  "devDependencies": {
+    "cssnano": "^7.1.2",
+    "html-validate": "^10.9.0",
+    "prettier-plugin-astro": "^0.14.1",
+    "stylelint": "^17.3.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }
