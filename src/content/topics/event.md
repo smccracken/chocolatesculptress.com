@@ -1,3 +1,0 @@
----
-title: "Sculptures for Events"
----

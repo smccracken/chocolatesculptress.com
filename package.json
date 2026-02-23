@@ -9,12 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
-    "astro": "^5.7.13",
-    "astro-cloudinary": "^1.3.2",
-    "sharp": "^0.34.2"
-  },
-  "devDependencies": {
-    "prettier-plugin-astro": "^0.14.1"
+    "astro": "^5.17.1"
   }
 }

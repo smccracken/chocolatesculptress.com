@@ -1,25 +1,17 @@
 ---
-import { getCollection } from "astro:content";
-import SiteIntro from "../components/SiteIntro.astro";
-import SculptureCards from "../components/SculptureCards.astro";
-import Layout from "../layouts/Home.astro";
-import Hero from "../components/Hero.astro";
-import PageDetails from "../components/PageDetails.astro";
 
-let allSculptures = await getCollection("sculptures");
-const sculptures = allSculptures.slice(0, 8);
 ---
 
-<Layout title="Chocolate Sculptress">
-  <Hero title="Chocolate Sculptress" showTagList={true}>
-    <p>A collection of deliciously edible art by <a href="/about/">Emily McCracken</a>.</p>
-  </Hero>
-  <div class="region">
-    <div class="wrapper flow">
-      <SculptureCards random={true} sculptures={sculptures}>
-        <h2 slot="heading" class="visually-hidden" }>Sculptures</h2>
-      </SculptureCards>
-    </div>
-  </div>
-  <PageDetails />
-</Layout>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Chocolate Sculptress</title>
+    </head>
+    <body>
+        <h1>Chocolate Sculptress</h1>
+    </body>
+</html>

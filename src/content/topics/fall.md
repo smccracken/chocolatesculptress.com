@@ -1,3 +1,0 @@
----
-title: "Fall Inspired Sculptures"
----

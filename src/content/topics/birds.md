@@ -1,3 +1,0 @@
----
-title: "Bird Themed Sculptures"
----
