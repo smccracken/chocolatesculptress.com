@@ -12,6 +12,7 @@
     "stylelint:fix": "stylelint \"src/**/*.{css,astro}\" --fix"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
     "astro": "^5.17.1",
     "astro-cloudinary": "^1.3.5"
   },
