@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 
 import cssnano from "cssnano";
 
@@ -12,6 +13,7 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+  integrations: [mdx()],
   prefetch: true,
   site: "https://chocolatesculptress.com",
   trailingSlash: "never",
