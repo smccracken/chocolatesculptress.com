@@ -1,43 +1,35 @@
-# Astro Starter Kit: Minimal
+# Chocolate Sculptress
 
-```sh
-pnpm create astro@latest -- --template minimal
+Source code for [chocolatesculptress.com](https://chocolatesculptress.com) which an archive site for [Emily McCracken's](https://emilymccracken.com) chocolate art portfilio. Built and maintained by [Scott McCracken](https://scottmccracken.net).
+
+
+## Tech Stack
+
+- **[Astro](https://astro.build/)** as a static site generator
+- **[Netlify](https://netlify/app)** for hosting
+- **[Cloudinary](https://cloudinary.com/)** for assets
+
+## Local Development
+
+Install the packages and run the dev server
+
+```bash
+pnpm install
+pnpm dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+To pull assets from a [Cloudinary](https://cloudinary.com/) account, you'll need to define the following keys in an `.env` file:
 
-## 🚀 Project Structure
+`
+PUBLIC_CLOUDINARY_CLOUD_NAME=xxxxxx
+PUBLIC_CLOUDINARY_API_KEY=xxxxxx
+CLOUDINARY_API_SECRET=xxxxxx
+`
 
-Inside of your Astro project, you'll see the following folders and files:
+## CI/CD
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+A [GitHub Actions](https://github.com/features/actions) workflow runs on every push and pull request to `main`. It builds the site and validates the HTML.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Accessibility
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The code is automatically tested for accessibility violations using the [WCAG 2.2 AA specification](https://www.w3.org/TR/WCAG22/). With that said, automated scanning only catches about 30% of actual accessibility violations so I also conduct manual testing. Please [file an issue](https://github.com/smccracken/chocolatesculptress.com/issues) if you ever have trouble accessing content on this site.
