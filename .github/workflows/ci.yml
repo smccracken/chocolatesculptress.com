@@ -37,3 +37,7 @@ jobs:
 
       - name: Build and validate HTML5
         run: pnpm html-validate
+        env:
+          PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}
+          PUBLIC_CLOUDINARY_API_KEY: ${{ secrets.PUBLIC_CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
